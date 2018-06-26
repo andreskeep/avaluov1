@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Avalúo fácil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <!--Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+  <!-- Estilos-->
+  <link rel="stylesheet" href="assets/css/avaluo-styles.css"/>
+</head>
+<body>
+  <div class="container-icon">
+    <div class="icon-toggle" id="icon-toggle"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span><span class="bar4"></span><span class="bar5"></span></div>
+  </div>
+  <div class="menu-responsive-back" id="menu-responsive-back"><a class="logo-wrapper" href="index.html"><img class="logo" src="img/avaluo-facil-logo-white.png" alt=""/></a>
+    <nav>
+      <ul class="menu-container">
+        <li class="item-menu"><a class="link active" href="#" onclick="$('[#home]').animatescroll();">Inicio</a></li>
+        <li class="item-menu"><a class="link" href="#" onclick="$('[#about]').animatescroll();">¿Quiénes somos?</a></li>
+        <li class="item-menu"><a class="link" href="#" onclick="$('[#services]').animatescroll();">Servicios</a></li>
+        <li class="item-menu"><a class="link" href="#" onclick="$('[#packages]').animatescroll();">Paquetes</a></li>
+        <li class="item-menu"><a class="link-ext perfil-link" href="#" id="perfil">Ingresar</a></li>
+        <li class="item-menu"><a class="link-ext" href="perfil.html">Perfil</a></li>
+        <li class="item-menu"><a class="link-ext perfil-link" href="#" id="perfil">Regístrate</a></li>
+        <li class="item-menu"><a class="link" href="#" onclick="$('[#contact]').animatescroll();">Contácto</a></li>
+      </ul>
+    </nav>
+    <nav class="social-media">
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="home" id="home"><span class="top"></span><span class="bottom"></span><span class="left"></span><span class="right"></span>
+    <div class="menu"><a class="logo-wrapper" href=""><img class="logo" src="img/avaluo-facil-logo.png" alt=""/></a>
+      <nav>
+        <ul class="menu-container">
+          <li class="item-menu"><a class="link active" href="" onclick="$('#home').animatescroll();">Inicio</a></li>
+          <li class="item-menu"><a class="link" href="" onclick="$('#about').animatescroll();">¿Quiénes somos?</a></li>
+          <li class="item-menu"><a class="link" href="" onclick="$('#services').animatescroll();">Avalúos</a></li>
+          <li class="item-menu"><a class="link" href="" onclick="$('#packages').animatescroll();">Paquetes</a></li>
+          <li class="item-menu"><a class="link-ext perfil-link" href="#" id="perfil">Ingresar</a></li>
+          <li class="item-menu"><a class="link-ext" href="perfil.html">Perfil</a></li>
+          <li class="item-menu"><a class="link-ext" href="registro.html" id="register-form">Registrarse</a></li>
+          <li class="item-menu"><a class="link" href="" onclick="$('#contacto').animatescroll();">Contácto</a></li>
+        </ul>
+      </nav>
+      <nav class="social-media">
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="logo-responsive" id="logo-responsive"><img src="img/avaluo-facil-logo.png" alt=""/></div>
+    <div class="wrapper">
+      <section class="registro" id="registro">
+        <div class="container full-height">
+          <div class="row full-height justify-content-center align-items-center">
+            <form class="col-lg-3" action="">
+              <h2>Ingresa a tu perfil</h2>
+              <div class="form-group">
+                <input class="form-control campo" type="text" placeholder="Usuario"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control campo" type="password" placeholder="Password"/>
+              </div>
+              <div class="form-group text-center">
+                <input class="ingresar" type="submit" value="INGRESAR"/>
+              </div>
+              <div class="form-group"><a href=""></a></div><a class="text-center" href="#" style="color: white; display: block">Olvidaste la contraseña</a><a class="registro-user" href="#">REGISTRARME</a><a class="facebook-login" href="#">INGRESAR CON FACEBOOK</a>
+            </form>
+          </div><a class="cerrar" href="#"> <i class="far fa-times-circle"></i></a>
+        </div>
+      </section>
+      <section class="slider section" id="slider">
+        <div class="carousel slide" id="carouselExampleControls" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active search">
+              <div class="row justify-content-center align-items-center full-height">
+                <div class="col-lg-8 text-center">
+                  <h3>LA PRIMER PLATAFORMA A</h3>
+                  <h2>NIVEL MUNDIAL<span>QUE HACE TU AVALUO 100% ONLINE</span></h2>
+                  <h1> <span class="one">COTIZACIÓN </span><span class="two">RÁPIDA</span></h1>
+                  <form class="form-inline text-center form" action="send.php" method="post">
+                    <select class="form-control select" name="estrato" placeholder="Estrato" required="required">
+                      <option value="" disabled="disabled" selected="selected">Selecciona un estrato</option>
+                      <option value="1">Estrato 1</option>
+                      <option value="2">Estrato 2</option>
+                      <option value="3">Estrato 3</option>
+                      <option value="4">Estrato 4</option>
+                      <option value="5">Estrato 5</option>
+                      <option value="6">Estrato 6</option>
+                    </select>
+                    <select class="form-control select" name="finalidad" id="avaluo">
+                      <option value="" disabled="disabled" selected="selected">Selecciona una finalidad</option>
+                      <option value="avaluo-informativo">Avalúo informativo</option>
+                      <option value="avaluo-certificado">Avalúo certificado</option>
+                    </select>
+                    <input class="form-control campo" type="text" placeholder="Estrato" style="display: none" required="required"/>
+                    <input class="form-control campo" type="text" placeholder="Finalidad" style="display: none" required="required"/>
+                    <input class="form-control campo" type="text" placeholder="Área M2"/>
+                    <input class="form-control enviar" type="submit" value="CALCULAR" id="calcular"/>
+                  </form>
+                  <div class="result"><span class="valor">$100'000.000</span><span class="title-valor">Resutado de la cotización</span></div><a class="registrate" href="registro.html">¡Ingresa ya! obtén beneficios!</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item search">
+              <div class="row justify-content-center align-items-center full-height">
+                <div class="col-lg-8 text-center">
+                  <h3>LA PRIMER PLATAFORMA A</h3>
+                  <h2>NIVEL MUNDIAL<span>QUE HACE TU AVALUO 100% ONLINE</span></h2>
+                  <h1> <span class="one">COTIZACIÓN </span><span class="two">RÁPIDA</span></h1>
+                  <form class="form-inline text-center form" action="send.php" method="post">
+                    <select class="form-control select" name="estrato" placeholder="Estrato" required="required">
+                      <option value="" disabled="disabled" selected="selected">Selecciona un estrato</option>
+                      <option value="1">Estrato 1</option>
+                      <option value="2">Estrato 2</option>
+                      <option value="3">Estrato 3</option>
+                      <option value="4">Estrato 4</option>
+                      <option value="5">Estrato 5</option>
+                      <option value="6">Estrato 6</option>
+                    </select>
+                    <select class="form-control select" name="finalidad" id="avaluo">
+                      <option value="" disabled="disabled" selected="selected">Selecciona una finalidad</option>
+                      <option value="avaluo-informativo">Avalúo informativo</option>
+                      <option value="avaluo-certificado">Avalúo certificado</option>
+                    </select>
+                    <input class="form-control campo" type="text" placeholder="Estrato" style="display: none" required="required"/>
+                    <input class="form-control campo" type="text" placeholder="Finalidad" style="display: none" required="required"/>
+                    <input class="form-control campo" type="text" placeholder="Área M2"/>
+                    <input class="form-control enviar" type="submit" value="CALCULAR" id="calcular"/>
+                  </form>
+                  <div class="result"><span class="valor">$100'000.000</span><span class="title-valor">Resutado de la cotización</span></div><a class="registrate" href="registro.html">¡Ingresa ya! obtén beneficios!</a>
+                </div>
+              </div>
+            </div>
+          </div><a class="carousel-control-prev arrow" href="#carouselExampleControls" role="button" data-slide="prev"><span><i class="fa fa-arrow-left" aria-hidden="true"></i></span><span class="sr-only">Previous</span></a><a class="carousel-control-next arrow" href="#carouselExampleControls" role="button" data-slide="next"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span><span class="sr-only">Next						</span></a>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <div class="row full-height align-items-center">
+          <div class="col-lg-6">
+            <h2 class="title-quienes">
+               ¿Quienes<span> somos?</span></h2>
+            <p> <strong>Avalúo Fácil </strong>es una empresa que ofrece servicios valuatorios confiables y rápidos en toda Colombia. Entre nuestros clientes se encuentran empresas de múltiples sectores que avalan el profesionalismo de nuestro equipo de trabajo y la calidad de nuestros servicios en cada una de las ciudades y municipios donde tenemos cobertura.</p>
+            <p>Nuestro equipo de trabajo está conformado por profesionales íntegros y multidisciplinarios. De igual forma, todos los peritos avaluadores están certificados en el Registro Nacional de Avaluadores (RNA), lo que garantiza que nuestros Avalúos Certificados son válidos para fines legales o financieros: Créditos, herencias, divorcios, NIIF, etc.</p>
+            <p>En Avalúo Fácil apostamos a la internacionalización de nuestros servicios, somos pioneros en Latinoamérica en la emisión de Avalúos Informativos. Este servicio es una valoración estadística del precio de una vivienda, oficina o local a excelentes precios. Esta innovación nos ha significado múltiples reconocimientos y apoyos de empresas como Microsoft, Bavaria y Connect Bogotá Region.</p>
+            <div class="row">
+              <div class="col-lg-12">
+                <p>Somos la única empresa valuatoria que apuesta en la Innovación como generador de servicios útiles para nuestros clientes. Es por esta razón que Avalúo Fácil:</p>
+                <ul>
+                  <li>Ofrece Cobertura nacional en Avalúos Informativos, Certificados y Rurales.</li>
+                  <li>Es pionero en la en uso de herramienta econométricas la cuales nos permiten ofrecer avalúos Informativos.</li>
+                  <li>Tiene un área de servicio al cliente que atenderá sus solicitudes antes, durante y después de la prestación del servicio.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+          </div>
+          <div class="col-lg-6"><img class="imagen-full" src="img/quienes-somos.jpg" alt=""/>
+            <h2 class="info-important"></h2>
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="small"> <strong>INFORMACIÓN IMPORTANTE</strong><br/>Avalúo Fácil es la primera empresa nacional valuatoria que bajo los estándares legales ha procurado incluir la innovación y el rigor estadístico en sus Servicios. Esta es la razón por la cual ha sido galardonada por empresas como Bavaria y Connect Bogotá.<br/><br/>Actualmente ofrecemos Avalúos Certificados tanto en el área urbana como rural en toda Colombia. La gran innovación son los Avalúos Informativos, este servicio es una una valoración estadística del precio de una vivienda, oficina o local a excelentes precios. Avalúo Fácil emplea fuentes de información real y confiable por lo que el precio del inmueble y sus anexos se ajustan de manera significativa a valores representativos de mercado.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services section" id="services">
+        <div class="row full-height">
+          <div class="col-lg-6 col-avaluo avaluo1">
+            <div class="title-section">
+              <h2><span class="avaluo">Avalúo</span><br/><span class="tipo">Informativo</span></h2>
+              <h3>Desde<span>$44.000</span></h3>
+            </div>
+            <div class="info">
+              <p>Valoración estadística del precio de una vivienda, oficina o local a excelentes precios. Avalúo Fácil emplea fuentes de información real y confiable por lo que el precio del inmueble y sus anexos se ajustan de manera significativa a valores representativos de mercado.</p>
+              <ul>
+                <li>Es el precio calculado estadísticamente de un inmueble en particular.</li>
+                <li>El modelo utiliza base de datos de información real y confiable.</li>
+                <li>Un Avalúo Informativo no es un avalúo oficial, pero es representativo para conocer el precio de merado de un inmueble.</li>
+                <li>Puede beneficiarse de excelentes descuentos, adquiriendo paquetes de avalúos informativos. (el BOTON paquetes me envía a la sección paquetes de avalúos en la aplicación)</li>
+                <li>Recibirá y podrá actualizar el Avalúo Informativo. Con este servicio conocerá el precio de mercado estimado, la calidad del avalúo, intervalo de precios para negociación, precio aproximado para arriendo y ubicación geográfica.</li>
+              </ul><a class="boton" href="#">Descargar ejemplo</a><a class="boton" href="checkout-informativo.html">comprar</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-avaluo avaluo2">
+            <div class="title-section">
+              <h2><span class="avaluo">Avalúo</span><br/><span class="tipo">Certificado</span></h2>
+              <h3>Desde<span>$44.000</span></h3>
+            </div>
+            <div class="info">
+              <p>Tenemos un equipo de profesionales listo para atender su solicitud de avalúo. Estamos en todas las ciudades de Colombia. Contáctese ahora mismo con nosotros para recibir mayor información.</p>
+              <ul>
+                <li>El avalúo Certificado es firmado por peritos certificados en el Registro Nacional de Avaluadores.</li>
+                <li>Este Avalúo es válido para cualquier trámite legal, financiero o sencillamente para actualización de activos con base a las Normas Internacionales de Información Financieras (NIIF).</li>
+                <li>Puede solicitarlo a través del chat o llamando a nuestros números telefónicos o directamente desde nuestra plataforma. (CLIC aquí para ingresar)</li>
+                <li>Tiempo de entrega record: 24 horas.</li>
+              </ul><a class="boton" href="#">Descargar ejemplo</a><a class="boton" href="checkout-certificado.html">comprar			</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="packages section" id="packages">
+        <div class="row full-height align-items-center">
+          <div class="col-lg-4 titulo">
+            <h2>Paquetes<br/><span>de avalúos</span></h2>
+          </div>
+          <div class="col-lg-8 cards">
+            <div class="row">
+              <div class="package-column">
+                <div class="card bg-light mb-3">
+                  <div class="card-header text-center"> 
+                    <h3 class="card-title">Paquete 1</h3>
+                    <h4 class="card-subtitle">10 AVALÚOS</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Precio por avalúo</div>
+                          <div class="column text-right price">$35.000</div>
+                        </div>
+                      </li>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Total</div>
+                          <div class="column text-right price">$350.000</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-lg-12 text-center"><a class="btn btn-dark boton" href="checkout-informativo.html">Comprar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="package-column">
+                <div class="card bg-light mb-3">
+                  <div class="card-header text-center"> 
+                    <h3 class="card-title">Paquete 2</h3>
+                    <h4 class="card-subtitle">20 AVALÚOS</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Precio por avalúo</div>
+                          <div class="column text-right price">$25.000</div>
+                        </div>
+                      </li>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Total</div>
+                          <div class="column text-right price">$500.000</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-lg-12 text-center"><a class="btn btn-dark boton" href="checkout-informativo.html">Comprar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="package-column">
+                <div class="card bg-light mb-3">
+                  <div class="card-header text-center"> 
+                    <h3 class="card-title">Paquete 3</h3>
+                    <h4 class="card-subtitle">30 AVALÚOS</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Precio por avalúo</div>
+                          <div class="column text-right price">$22.500</div>
+                        </div>
+                      </li>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Total</div>
+                          <div class="column text-right price">$675.000</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-lg-12 text-center"><a class="btn btn-dark boton" href="checkout-informativo.html">Comprar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="package-column">
+                <div class="card bg-light mb-3">
+                  <div class="card-header text-center"> 
+                    <h3 class="card-title">Paquete 4</h3>
+                    <h4 class="card-subtitle">50 AVALÚOS</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Precio por avalúo</div>
+                          <div class="column text-right price">$20.000</div>
+                        </div>
+                      </li>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Total</div>
+                          <div class="column text-right price">$1'000.000</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-lg-12 text-center"><a class="btn btn-dark boton" href="checkout-informativo.html">Comprar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacto section" id="contacto">
+        <div class="row full-height align-items-center">
+          <div class="col-lg-6 form-container">
+            <h2>
+               Seguimos en <br/><span>contácto</span></h2>
+            <p class="text-center">Si tiene alguna inquietud puede contactarnos por cualquier medio que ofrecemos</p>
+            <form action="send.php" method="post">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input class="form-control campo" type="text" placeholder="Nombre"/>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input class="form-control campo" type="email" placeholder="E-mail"/>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input class="form-control campo" type="text" placeholder="Teléfono"/>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input class="form-control campo" type="text" placeholder="Asunto"/>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control campo" placeholder="Déjanos un mensaje"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <input class="btn btn-dark" type="submit" value="Enviar" style="padding: 10px 40px"/>
+                </div>
+              </div>
+              <div class="row" style="padding: 20px 0">
+                <div class="col-lg-6"><i class="fas fa-home"></i>
+                  <p> <strong>DIRECCIÓN</strong><br/>Cra 73a #53 - 33, Oficina 202. Bogota, Colombia</p>
+                </div>
+                <div class="col-lg-6"><i class="far fa-envelope-open"></i>
+                  <p> <strong>E-mail</strong><br/>info@avaluofacil.com</p>
+                </div>
+                <div class="col-lg-6"><i class="fas fa-phone"></i>
+                  <p> <strong>Teléfono</strong><br/>+57 (1) 4804180</p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 photo">
+            <div class="row full-height align-items-center justify-content-center">
+              <h2 class="text-center"> <a href="registro.html">Regístrate acá</a></h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer section" id="footer">
+        <div class="row full-height align-items-center justify-content-center">
+          <div class="col-lg-6">
+            <iframe src="https://snazzymaps.com/embed/77933" width="100%" height="600px" style="border:none;"></iframe>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="text-center aliados">Nuestros <span>aliados</span></h2><img class="logos" src="img/logos.jpg" alt=""/>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-lg-3"><img src="img/avaluo-facil-logo-white.png"/>
+              <p>La primer plataforma a nivel mundial que hace avaluos 100% online</p>
+            </div>
+            <div class="col-lg-3"><strong>NUESTRA COBERTURA</strong>
+              <P>Bogota, Medellin, Cartagena, Barranquilla, Cali, Bucaramanga, Santa Marta Peritos registrados en</P>
+            </div>
+            <div class="col-lg-3"><strong>NUESTROS SERVICIOS</strong>
+              <ul>
+                <li><a href="#">Avalúo informativo</a></li>
+                <li><a href="#">Avalúo certificado</a></li>
+                <li><a href="#">Paquetes de avalúos</a></li>
+              </ul><strong>LEGAL</strong>
+              <ul>
+                <li><a href="#">Propiedad intelectual</a></li>
+                <li><a href="#">Privacidad y seguridad</a></li>
+                <li><a href="#">Condiciones generales</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3"><strong>CONTÁCTENOS</strong>
+              <p>Bogota, Cra 73a #53 - 33, Oficina 202. +57 (1) 4804180</p>
+              <p>info@avaluofacil.com</p>
+            </div>
+            <div class="col-lg-12">
+              <p class="text-center">© Avaluo Facil 2016. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!--SCRIPTS-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Animate-->
+  <script src="assets/js/animatescroll.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>

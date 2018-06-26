@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Avalúo fácil - checkout Certificado
+	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	//Icons
+	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" )
+	// Bootstrap
+	link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+	// Estilos
+	link(rel="stylesheet", href="assets/css/avaluo-styles.css")
+body
+	
+	.container-icon
+		#icon-toggle.icon-toggle
+			span.bar1
+			span.bar2
+			span.bar3
+			span.bar4
+			span.bar5
+
+	#menu-responsive-back.menu-responsive-back
+		a(href="index.html", class="logo-wrapper")
+			img(src="img/avaluo-facil-logo-white.png", alt="", class="logo")
+		nav
+			ul.menu-container
+				li.item-menu
+						a(href="index.html", class="link-ext") Volver al Inicio
+				li.item-menu
+					a(href="perfil.html", class="link-ext",) Perfil
+				li.item-menu
+					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
+		nav.social-media
+			ul
+				li
+					a(href="#")
+						i(class="fab fa-facebook-square")
+				li
+					a(href="#")
+						i(class="fab fa-youtube")
+				li
+					a(href="#")
+						i(class="fab fa-instagram")
+	#home.home
+		span.top
+		span.bottom
+		span.left
+		span.right
+		.menu
+			a(href="index.html", class="logo-wrapper")
+				img(src="img/avaluo-facil-logo.png", alt="", class="logo")
+			nav
+				ul.menu-container
+					li.item-menu
+						a(href="index.html", class="link-ext") Volver al Inicio
+					li.item-menu
+						a(href="perfil.html", class="link-ext",) Perfil
+					li.item-menu
+						a(href="#", class="link-ext perfil-link", id="perfil") Ingresar
+					li.item-menu
+						a(href="registro.html", class="link-ext", id="register-form") Registrarse
+					li.item-menu
+						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
+			nav.social-media
+				ul
+					li
+						a(href="#")
+							i(class="fab fa-facebook-square")
+					li
+						a(href="#")
+							i(class="fab fa-youtube")
+					li
+						a(href="#")
+							i(class="fab fa-instagram")
+		.logo-responsive#logo-responsive
+			img(src="img/avaluo-facil-logo.png", alt="")
+		.wrapper
+			section#registro.registro
+				.container.full-height
+					.row.full-height.justify-content-center.align-items-center
+						form(action="" class="col-lg-3")
+							h2 Ingresa a tu perfil
+							.form-group
+								input(type="text" class="form-control campo" placeholder="Usuario")
+							.form-group
+								input(type="password" class="form-control campo" placeholder="Password")
+							.form-group.text-center
+								input(type="submit" class="ingresar" value="INGRESAR")
+							.form-group
+								a(href="")
+							a(href="#" class="text-center" style="color: white; display: block") Olvidaste la contraseña
+							a(href="#" class="registro-user") REGISTRARME
+							a(href="#" class="facebook-login") INGRESAR CON FACEBOOK
+					a(href="#" class="cerrar") 
+						i(class="far fa-times-circle")
+			section#checkout.checkout.section
+				.row.full-height.justify-content-center
+					.col-lg-6
+						form(action="" class="cupon text-center")
+							label(for="") ¿Tienes un cupón de descuento?
+							input(type="text" class="form-control campo" style="margin-bottom: 0")
+							input(type="submit" class="action-button" value="verificar")
+						form#msform.msform(action="send.php" method="post")
+							h2 
+								span Finalizar compra
+							a(href="#" class="perfil-link") ¿Ya tienes una cuenta? Ingresa acá
+							ul#progressbar
+								li.active Ubicación
+								li Datos personales
+							fieldset
+								h2.fs-title Ubicación
+								h3.fs-subtitle Paso 1
+								.row
+									.col-lg-12
+										iframe(src="https://snazzymaps.com/embed/77933" width="100%" height="200px" style="border:none;")
+										br
+										br
+										input(type="text" placeholder="Dirección" class="form-control campo")
+									.col-lg-6
+										select(name="estrato" class="form-control select" placeholder="Estrato")
+											option(value="" disabled selected) Tipo de inmueble
+											option(value="apartamento") Apartamento
+											option(value="apartamento") Casa
+										select(name="estrato" class="form-control select" placeholder="Ciudad")
+											option(value="" disabled selected) Ciudad
+											option(value="Bogotá") Bogotá
+									.col-lg-6
+										select(name="estrato" class="form-control select" placeholder="Ciudad")
+											option(value="" disabled selected) Localidad
+											option(value="Kennedy") Kennedy
+										select(name="estrato" class="form-control select" placeholder="Estrato")
+											option(value="" disabled selected class="opcion1") Estrato
+											option(value="1") 1
+											option(value="2") 2
+											option(value="3") 3
+											option(value="4") 4
+											option(value="5") 5
+											option(value="6") 6
+								input(type="button" name="next" class="next action-button" value="Siguiente")
+							fieldset
+								h2.fs-title Datos personales
+								h3.fs-subtitle PASO 2
+								.row(style="margin:10px 0px 0px 0px")
+									.col-lg-4
+										input(type="text" placeholder="Nombre" class="form-control campo")
+									.col-lg-4
+										input(type="text" placeholder="Apellidos" class="form-control campo")
+									.col-lg-4
+										input(type="text" placeholder="Compañia" class="form-control campo")
+								.row(style="margin:10px 0px 0px 0px")
+									.col-lg-4
+										input(type="text" placeholder="Ciudad" class="form-control campo")
+									.col-lg-4
+										input(type="text" placeholder="Dirección" class="form-control campo")
+									.col-lg-4
+										input(type="text" placeholder="Barrio" class="form-control campo")
+								.row(style="margin:10px 0px 0px 0px")
+									.col-lg-4
+										input(type="text" placeholder="Teléfono" class="form-control campo")
+									.col-lg-4
+										input(type="e-mail" placeholder="E-mail" class="form-control campo")
+								.row(style="margin:10px 0px 0px 0px")
+									.col-lg-12
+										textarea(class="form-control" placeholder="Información adicional")
+								.row(style="margin-bottom: 20px")
+									.col-lg-12.text-center
+										label.for-check-label(style="color: white") 
+											input(type="checkbox")
+											|  ¿Quieres crear una cuenta?
+								input(type="button" name="previous" class="previous action-button" value="Anterior" )
+								input(type="submit" name="submit" class="submit action-button" value="COMPRAR")
+
+	// Scripts
+	script(src="assets/js/jquery.min.js")
+	script(src="assets/js/bootstrap.min.js")
+	// Animate
+	script(src="assets/js/animatescroll.min.js")
+	script(src="assets/js/app.js")
+	

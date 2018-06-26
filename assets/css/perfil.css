@@ -1,0 +1,2221 @@
+@charset "UTF-8";
+/* Fonts Roboto*/
+@font-face {
+  font-family: 'roboto_condensedbold';
+  src: url("../fonts/robotocondensed-bold-webfont.woff2") format("woff2"), url("robotocondensed-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_condensedbold_italic';
+  src: url("../fonts/robotocondensed-bolditalic-webfont.woff2") format("woff2"), url("robotocondensed-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_condenseditalic';
+  src: url("../fonts/robotocondensed-italic-webfont.woff2") format("woff2"), url("robotocondensed-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_condensedlight';
+  src: url("../fonts/robotocondensed-light-webfont.woff2") format("woff2"), url("robotocondensed-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_condensedlight_italic';
+  src: url("../fonts/robotocondensed-lightitalic-webfont.woff2") format("woff2"), url("robotocondensed-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_condensedregular';
+  src: url("../fonts/robotocondensed-regular-webfont.woff2") format("woff2"), url("robotocondensed-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 39, sass/perfil.sass */
+.imagen-full {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 44, sass/perfil.sass */
+.logo-responsive {
+  width: 160px;
+  height: auto;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 10000;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 10px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+@media (max-width: 996px) {
+  /* line 44, sass/perfil.sass */
+  .logo-responsive {
+    display: block;
+  }
+}
+
+/* line 60, sass/perfil.sass */
+.logo-responsive img {
+  display: block;
+  width: 100%;
+}
+
+/* line 63, sass/perfil.sass */
+.full-height {
+  height: 100%;
+}
+
+/* line 65, sass/perfil.sass */
+.container-icon {
+  position: fixed;
+  width: 34px;
+  height: 24px;
+  z-index: 100000000;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #606060;
+  display: none;
+}
+
+@media (max-width: 996px) {
+  /* line 65, sass/perfil.sass */
+  .container-icon {
+    display: block;
+  }
+}
+
+/* line 80, sass/perfil.sass */
+.container-icon .icon-toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 28px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: .4s ease-in-out;
+}
+
+/* line 89, sass/perfil.sass */
+.container-icon .icon-toggle:hover span.bar1 {
+  left: 120%;
+}
+
+/* line 91, sass/perfil.sass */
+.container-icon .icon-toggle:hover span.bar2 {
+  left: 120%;
+}
+
+/* line 93, sass/perfil.sass */
+.container-icon .icon-toggle:hover span.bar3 {
+  left: 120%;
+}
+
+/* line 95, sass/perfil.sass */
+.container-icon .icon-toggle span {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: white;
+  transition: .4s ease-in-out;
+}
+
+/* line 101, sass/perfil.sass */
+.container-icon .icon-toggle span.bar1 {
+  left: 0;
+  top: 0;
+  transition: .4s ease-in-out;
+}
+
+/* line 105, sass/perfil.sass */
+.container-icon .icon-toggle span.bar2 {
+  left: 0;
+  top: 10px;
+  transition: .6s ease-in-out;
+}
+
+/* line 109, sass/perfil.sass */
+.container-icon .icon-toggle span.bar3 {
+  left: 0;
+  top: 20px;
+  transition: .8s ease-in-out;
+}
+
+/* line 113, sass/perfil.sass */
+.container-icon .icon-toggle span.bar4 {
+  left: 0;
+  transition: .6s ease-in-out;
+}
+
+/* line 116, sass/perfil.sass */
+.container-icon .icon-toggle span.bar5 {
+  right: 0;
+  transition: .8s ease-in-out;
+}
+
+/* line 121, sass/perfil.sass */
+.menu-responsive-back {
+  background: #424242;
+  width: 0%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .4s ease-in-out;
+  z-index: 100000;
+  overflow: hidden;
+  /* Logo*/
+}
+
+/* line 131, sass/perfil.sass */
+.menu-responsive-back.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  height: 100vh;
+  transition: .4s ease-in-out;
+  background: #424242;
+}
+
+/* line 142, sass/perfil.sass */
+.menu-responsive-back .logo-wrapper {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  height: 20%;
+}
+
+/* line 148, sass/perfil.sass */
+.menu-responsive-back .logo-wrapper .logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* line 152, sass/perfil.sass */
+.menu-responsive-back .social-media {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* line 155, sass/perfil.sass */
+.menu-responsive-back .social-media ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 158, sass/perfil.sass */
+.menu-responsive-back .social-media ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* line 161, sass/perfil.sass */
+.menu-responsive-back .social-media ul li a {
+  color: #C9C9C9;
+  margin: 0 5px;
+  transition: .4s ease-in-out;
+}
+
+/* line 165, sass/perfil.sass */
+.menu-responsive-back .social-media ul li a:hover {
+  color: #FFFFFF;
+}
+
+/* line 167, sass/perfil.sass */
+.menu-responsive-back .social-media ul li a i {
+  font-size: 1.5em;
+}
+
+/* line 169, sass/perfil.sass */
+.menu-responsive-back nav {
+  width: 70%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 173, sass/perfil.sass */
+.menu-responsive-back nav .menu-container {
+  padding: 50px;
+  height: 50%;
+}
+
+/* line 176, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu {
+  list-style: none;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 180, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu .link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: .4s ease-in-out;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  /* line 180, sass/perfil.sass */
+  .menu-responsive-back nav .menu-container .item-menu .link {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 180, sass/perfil.sass */
+  .menu-responsive-back nav .menu-container .item-menu .link {
+    font-size: 1.3em;
+  }
+}
+
+/* line 191, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu .link:after {
+  content: '';
+  background-image: url(../../img/border-right.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -20px;
+  top: -13px;
+  opacity: 0;
+  transition: .4s ease-in-out;
+}
+
+/* line 205, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu .link:hover {
+  font-family: 'roboto_condensedbold';
+}
+
+/* line 207, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu .link:hover:after {
+  opacity: 1;
+  right: -10px;
+  top: -3px;
+}
+
+/* line 211, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu .link:hover:before {
+  opacity: 1;
+  left: -10px;
+  bottom: -3px;
+}
+
+/* line 215, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu .link:before {
+  content: '';
+  background-image: url(../../img/border-left.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+  bottom: -13px;
+  opacity: 0;
+  transition: .4s ease-in-out;
+}
+
+/* line 229, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu .link.active {
+  font-family: 'roboto_condensedbold';
+}
+
+/* line 231, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu .link.active:after {
+  content: '';
+  background-image: url(../../img/border-right.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -10px;
+  top: -3px;
+  opacity: 1;
+}
+
+/* line 244, sass/perfil.sass */
+.menu-responsive-back nav .menu-container .item-menu .link.active:before {
+  content: '';
+  background-image: url(../../img/border-left.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -10px;
+  bottom: -3px;
+  opacity: 1;
+}
+
+/* line 258, sass/perfil.sass */
+body {
+  font-family: 'roboto_condensedlight';
+}
+
+/* Márgenes*/
+/* line 263, sass/perfil.sass */
+.home {
+  position: relative;
+}
+
+/* line 265, sass/perfil.sass */
+.home span.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 10;
+  background: #393939;
+}
+
+@media (max-width: 996px) {
+  /* line 265, sass/perfil.sass */
+  .home span.top {
+    height: 20px;
+  }
+}
+
+/* line 275, sass/perfil.sass */
+.home span.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 10;
+  background: #393939;
+}
+
+@media (max-width: 996px) {
+  /* line 275, sass/perfil.sass */
+  .home span.bottom {
+    height: 20px;
+  }
+}
+
+/* line 285, sass/perfil.sass */
+.home span.left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 10;
+  background: #393939;
+}
+
+@media (max-width: 996px) {
+  /* line 285, sass/perfil.sass */
+  .home span.left {
+    width: 20px;
+  }
+}
+
+/* line 296, sass/perfil.sass */
+.home span.right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 10;
+  background: #393939;
+}
+
+@media (max-width: 996px) {
+  /* line 296, sass/perfil.sass */
+  .home span.right {
+    width: 20px;
+  }
+}
+
+/*Menu*/
+/* line 309, sass/perfil.sass */
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 350px;
+  background: #393939;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* Logo*/
+}
+
+@media (max-width: 996px) {
+  /* line 309, sass/perfil.sass */
+  .menu {
+    display: none;
+  }
+}
+
+/* line 323, sass/perfil.sass */
+.menu .logo-wrapper {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 328, sass/perfil.sass */
+.menu .logo-wrapper .logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* line 332, sass/perfil.sass */
+.menu .social-media {
+  margin-bottom: 40px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* line 338, sass/perfil.sass */
+.menu .social-media ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 341, sass/perfil.sass */
+.menu .social-media ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* line 344, sass/perfil.sass */
+.menu .social-media ul li a {
+  color: gray;
+  margin: 0 5px;
+  transition: .4s ease-in-out;
+}
+
+/* line 348, sass/perfil.sass */
+.menu .social-media ul li a:hover {
+  color: #EFEFEF;
+}
+
+/* line 350, sass/perfil.sass */
+.menu .social-media ul li a i {
+  font-size: 1.5em;
+}
+
+/* line 352, sass/perfil.sass */
+.menu .menu-container {
+  padding: 50px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 80px;
+  margin-top: 30px;
+}
+
+/* line 358, sass/perfil.sass */
+.menu .menu-container .item-menu {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* line 361, sass/perfil.sass */
+.menu .menu-container .item-menu .link-ext {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: .4s ease-in-out;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  /* line 361, sass/perfil.sass */
+  .menu .menu-container .item-menu .link-ext {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 361, sass/perfil.sass */
+  .menu .menu-container .item-menu .link-ext {
+    font-size: 1.3em;
+  }
+}
+
+/* line 372, sass/perfil.sass */
+.menu .menu-container .item-menu .link-ext:after {
+  content: '';
+  background-image: url(../../img/border-right.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -20px;
+  top: -13px;
+  opacity: 0;
+  transition: .4s ease-in-out;
+}
+
+/* line 386, sass/perfil.sass */
+.menu .menu-container .item-menu .link-ext:hover {
+  font-family: 'roboto_condensedbold';
+}
+
+/* line 388, sass/perfil.sass */
+.menu .menu-container .item-menu .link-ext:hover:after {
+  opacity: 1;
+  right: -10px;
+  top: -3px;
+}
+
+/* line 392, sass/perfil.sass */
+.menu .menu-container .item-menu .link-ext:hover:before {
+  opacity: 1;
+  left: -10px;
+  bottom: -3px;
+}
+
+/* line 396, sass/perfil.sass */
+.menu .menu-container .item-menu .link-ext:before {
+  content: '';
+  background-image: url(../../img/border-left.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+  bottom: -13px;
+  opacity: 0;
+  transition: .4s ease-in-out;
+}
+
+/* line 410, sass/perfil.sass */
+.menu .menu-container .item-menu .link-ext.active {
+  font-family: 'roboto_condensedbold';
+}
+
+/* line 412, sass/perfil.sass */
+.menu .menu-container .item-menu .link-ext.active:after {
+  content: '';
+  background-image: url(../../img/border-right.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -10px;
+  top: -3px;
+  opacity: 1;
+}
+
+/* line 425, sass/perfil.sass */
+.menu .menu-container .item-menu .link-ext.active:before {
+  content: '';
+  background-image: url(../../img/border-left.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -10px;
+  bottom: -3px;
+  opacity: 1;
+}
+
+/* line 438, sass/perfil.sass */
+.menu .menu-container .item-menu .link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: .4s ease-in-out;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/* line 445, sass/perfil.sass */
+.menu .menu-container .item-menu .link:after {
+  content: '';
+  background-image: url(../../img/border-right.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -20px;
+  top: -13px;
+  opacity: 0;
+  transition: .4s ease-in-out;
+}
+
+/* line 459, sass/perfil.sass */
+.menu .menu-container .item-menu .link:hover {
+  font-family: 'roboto_condensedbold';
+}
+
+/* line 461, sass/perfil.sass */
+.menu .menu-container .item-menu .link:hover:after {
+  opacity: 1;
+  right: -10px;
+  top: -3px;
+}
+
+/* line 465, sass/perfil.sass */
+.menu .menu-container .item-menu .link:hover:before {
+  opacity: 1;
+  left: -10px;
+  bottom: -3px;
+}
+
+/* line 469, sass/perfil.sass */
+.menu .menu-container .item-menu .link:before {
+  content: '';
+  background-image: url(../../img/border-left.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+  bottom: -13px;
+  opacity: 0;
+  transition: .4s ease-in-out;
+}
+
+/* line 483, sass/perfil.sass */
+.menu .menu-container .item-menu .link.active {
+  font-family: 'roboto_condensedbold';
+}
+
+/* line 485, sass/perfil.sass */
+.menu .menu-container .item-menu .link.active:after {
+  content: '';
+  background-image: url(../../img/border-right.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -10px;
+  top: -3px;
+  opacity: 1;
+}
+
+/* line 498, sass/perfil.sass */
+.menu .menu-container .item-menu .link.active:before {
+  content: '';
+  background-image: url(../../img/border-left.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -10px;
+  bottom: -3px;
+  opacity: 1;
+}
+
+/* line 514, sass/perfil.sass */
+.wrapper {
+  position: relative;
+  left: 350px;
+  top: 50px;
+  width: calc(100% - 400px);
+  overflow: hidden;
+  transition: .3s ease-in-out;
+}
+
+@media (max-width: 996px) {
+  /* line 514, sass/perfil.sass */
+  .wrapper {
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+}
+
+/* line 526, sass/perfil.sass */
+section.section {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+  margin-bottom: 50px;
+  overflow: hidden;
+  padding: 0px;
+  background-image: url(../../img/background-perfil.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 996px) {
+  /* line 526, sass/perfil.sass */
+  section.section {
+    height: calc(100vh - 40px);
+  }
+}
+
+/* line 542, sass/perfil.sass */
+section.historial h2 {
+  text-transform: uppercase;
+  color: #3A3A3A;
+}
+
+/* line 545, sass/perfil.sass */
+section.historial thead {
+  color: #fff;
+  background-color: #2f90f0;
+  background-color-border-color: #2f90f0;
+}
+
+/* line 549, sass/perfil.sass */
+section.historial th, section.historial td {
+  color: #7B7B7B;
+}
+
+/* line 551, sass/perfil.sass */
+section.historial .titulos {
+  color: white;
+}
+
+/* line 554, sass/perfil.sass */
+section.perfil h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  color: gray;
+}
+
+/* line 558, sass/perfil.sass */
+section.perfil form {
+  width: 100%;
+}
+
+/* line 560, sass/perfil.sass */
+section.perfil form .campo {
+  width: 100%;
+  border-radius: 15px;
+  text-align: center;
+  transition: .4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  /* line 560, sass/perfil.sass */
+  section.perfil form .campo {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 560, sass/perfil.sass */
+  section.perfil form .campo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* line 573, sass/perfil.sass */
+section.perfil form .campo:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid red;
+}
+
+/* line 577, sass/perfil.sass */
+section.perfil form .btn {
+  border: none;
+  width: 100%;
+}
+
+/* line 580, sass/perfil.sass */
+section.perfil form .btn:hover {
+  background: #1A1A1A;
+}
+
+/* line 582, sass/perfil.sass */
+section.perfil .codigo-promocional {
+  background: red;
+  padding: 20px;
+  color: white;
+}
+
+/* line 586, sass/perfil.sass */
+section.perfil .boton-editar {
+  padding: 20px;
+  background-color: #3E3E3E;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  transition: .5s ease-in-out;
+}
+
+/* line 595, sass/perfil.sass */
+section.perfil .boton-editar:hover {
+  background: #232323;
+}
+
+/* line 597, sass/perfil.sass */
+section.slider {
+  background-image: url();
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+/* line 603, sass/perfil.sass */
+section.slider .slide {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* line 607, sass/perfil.sass */
+section.slider .slide .carousel-inner {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 611, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 615, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item h3 {
+  color: #858585;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* line 615, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item h3 {
+    font-size: 2.1em;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 615, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item h3 {
+    margin-top: 60px;
+    font-size: .8em;
+  }
+}
+
+/* line 625, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item h2 {
+  color: #bcbcbc;
+  font-family: 'roboto_condensedbold_italic';
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* line 625, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item h2 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 625, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item h2 {
+    font-size: 1.3em;
+  }
+}
+
+/* line 635, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item h2 span {
+  display: block;
+  font-size: .45em !important;
+  font-family: 'roboto_condensedregular';
+}
+
+/* line 639, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-family: 'roboto_condensedbold_italic';
+  font-size: 3em;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  /* line 639, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item h1 {
+    font-size: 2.4em;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 639, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item h1 {
+    font-size: 1.1em;
+  }
+}
+
+/* line 649, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item h1 .one {
+  position: relative;
+  background: #5b5b5b;
+  padding: 5px 10px;
+}
+
+/* line 653, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item h1 .one:after {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 657, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item h1 .two {
+  position: relative;
+  background: #e44040;
+  padding: 5px 20px;
+}
+
+/* line 661, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item h1 .two:after {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 665, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item form {
+  width: 100%;
+}
+
+/* line 667, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item form .campo {
+  width: 23%;
+  margin: 0 6px;
+  border-radius: 15px;
+  text-align: center;
+  transition: .4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  /* line 667, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item form .campo {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 667, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item form .campo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* line 681, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item form .campo:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid red;
+}
+
+/* line 685, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item form .select {
+  width: 25%;
+  margin: 0 6px;
+  border-radius: 15px;
+  text-align: center;
+  color: gray;
+  transition: .4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  /* line 685, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item form .select {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 685, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item form .select {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* line 700, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item form .select:focus {
+  outline: 0 !important;
+  box-shadow: none;
+  border: 1px solid red;
+}
+
+/* line 704, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item form .select option {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* line 704, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item form .select option {
+    width: 100%;
+  }
+}
+
+/* line 708, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item form .enviar {
+  width: 20%;
+  cursor: pointer;
+  border: 0;
+  background: red;
+  border-radius: 15px;
+  color: white;
+  transition: .5s ease-in-out;
+}
+
+/* line 716, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item form .enviar:hover {
+  background: #3C5B93;
+}
+
+@media (max-width: 768px) {
+  /* line 708, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item form .enviar {
+    width: 40%;
+    margin: 10px auto;
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 708, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item form .enviar {
+    font-size: 1.0em;
+    margin-bottom: 0;
+  }
+}
+
+/* line 725, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item .result {
+  margin-top: 30px;
+  position: relative;
+}
+
+/* line 728, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item .result span.title-valor {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 6px 15px;
+  background: #3C5B93;
+  color: white;
+  font-family: 'roboto_condensedlight_italic';
+  font-size: .85em;
+}
+
+@media (max-width: 556px) {
+  /* line 728, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item .result span.title-valor {
+    font-size: .65em;
+  }
+}
+
+/* line 741, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item .result span.valor {
+  font-family: 'roboto_condensedlight_italic';
+  padding: 10px 80px;
+  background: white;
+  font-size: 1.5em;
+  color: #4C4C4C;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 741, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item .result span.valor {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 741, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item .result span.valor {
+    font-size: 1.2em;
+  }
+}
+
+/* line 752, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item .result span.valor:after {
+  content: '';
+  background-image: url(../../img/border-right.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -20px;
+  top: -13px;
+  opacity: 1;
+  transition: .4s ease-in-out;
+  z-index: 100000;
+}
+
+/* line 767, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item .result span.valor:before {
+  content: '';
+  background-image: url(../../img/border-left.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+  bottom: -13px;
+  opacity: 1;
+  transition: .4s ease-in-out;
+}
+
+/* line 782, sass/perfil.sass */
+section.slider .slide .carousel-inner .carousel-item .registrate {
+  color: white;
+  font-family: 'roboto_condensedbold_italic';
+  text-align: center;
+  display: inline-block;
+  font-size: 2em;
+  margin-top: 50px;
+  background: red;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  /* line 782, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item .registrate {
+    font-size: 1.3em;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 782, sass/perfil.sass */
+  section.slider .slide .carousel-inner .carousel-item .registrate {
+    font-size: .85em;
+    padding: 10px 30px;
+  }
+}
+
+/* line 799, sass/perfil.sass */
+section.slider .slide .carousel-inner .search {
+  background-image: url(../../img/search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+/* line 807, sass/perfil.sass */
+section.slider .arrow i {
+  color: red !important;
+}
+
+@media (max-width: 768px) {
+  /* line 809, sass/perfil.sass */
+  section.slider .arrow .fa-arrow-left {
+    position: absolute;
+    bottom: 0px;
+    background: black;
+    padding: 20px;
+    color: white !important;
+    left: 0;
+    opacity: .85 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 818, sass/perfil.sass */
+  section.slider .arrow .fa-arrow-right {
+    position: absolute;
+    bottom: 0px;
+    background: black;
+    padding: 20px;
+    color: white !important;
+    right: 0;
+    opacity: .85 !important;
+  }
+}
+
+/* line 829, sass/perfil.sass */
+section.services {
+  padding-top: 70px;
+}
+
+@media (max-width: 768px) {
+  /* line 829, sass/perfil.sass */
+  section.services {
+    height: 220%;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 829, sass/perfil.sass */
+  section.services {
+    padding-top: 10px;
+    height: 180vh;
+  }
+}
+
+/* line 837, sass/perfil.sass */
+section.services .avaluo1 .title-section {
+  height: 30%;
+}
+
+@media (max-width: 768px) {
+  /* line 837, sass/perfil.sass */
+  section.services .avaluo1 .title-section {
+    margin-top: 50px;
+    height: auto;
+  }
+}
+
+/* line 842, sass/perfil.sass */
+section.services .avaluo1 .title-section h2 {
+  font-family: 'roboto_condensedlight';
+  text-transform: uppercase;
+  color: red;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+}
+
+/* line 849, sass/perfil.sass */
+section.services .avaluo1 .title-section h2:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  background: url(../../img/arrow-blue.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+@media (max-width: 768px) {
+  /* line 849, sass/perfil.sass */
+  section.services .avaluo1 .title-section h2:after {
+    left: 20%;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 849, sass/perfil.sass */
+  section.services .avaluo1 .title-section h2:after {
+    left: 5%;
+    width: 30px;
+    height: 60px;
+  }
+}
+
+/* line 867, sass/perfil.sass */
+section.services .avaluo1 .title-section h2:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  background: url(../../img/arrow-blue.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+@media (max-width: 768px) {
+  /* line 867, sass/perfil.sass */
+  section.services .avaluo1 .title-section h2:before {
+    right: 20%;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 867, sass/perfil.sass */
+  section.services .avaluo1 .title-section h2:before {
+    right: 5%;
+    width: 30px;
+    height: 60px;
+  }
+}
+
+/* line 885, sass/perfil.sass */
+section.services .avaluo1 .title-section h2 .avaluo {
+  font-size: 1.6em;
+  color: #5A5A5A;
+}
+
+/* line 888, sass/perfil.sass */
+section.services .avaluo1 .title-section h2 .tipo {
+  position: relative;
+  font-family: 'roboto_condensedbold';
+  font-size: .87em;
+  color: #0066ad;
+}
+
+/* line 893, sass/perfil.sass */
+section.services .avaluo1 .title-section h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'roboto_condensedlight_italic';
+  margin-bottom: 40px;
+}
+
+/* line 898, sass/perfil.sass */
+section.services .avaluo1 .title-section h3 span {
+  color: #0066ad;
+  font-family: 'roboto_condensedlight_italic';
+}
+
+/* line 901, sass/perfil.sass */
+section.services .avaluo1 .info {
+  background: url(../../img/back-avaluo.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 70%;
+}
+
+@media (max-width: 768px) {
+  /* line 901, sass/perfil.sass */
+  section.services .avaluo1 .info {
+    height: auto;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 901, sass/perfil.sass */
+  section.services .avaluo1 .info {
+    padding: 0px;
+  }
+}
+
+/* line 913, sass/perfil.sass */
+section.services .avaluo1 .info p {
+  color: #363636;
+}
+
+/* line 916, sass/perfil.sass */
+section.services .avaluo1 .info ul {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1366px) {
+  /* line 916, sass/perfil.sass */
+  section.services .avaluo1 .info ul {
+    display: none;
+  }
+}
+
+/* line 920, sass/perfil.sass */
+section.services .avaluo1 .info ul li {
+  font-family: 'roboto_condensedlight';
+  color: #787878;
+  text-align: justify;
+}
+
+@media (max-width: 1366px) {
+  /* line 920, sass/perfil.sass */
+  section.services .avaluo1 .info ul li {
+    font-size: .8em;
+  }
+}
+
+/* line 926, sass/perfil.sass */
+section.services .avaluo1 .info .boton {
+  background: #0066ad;
+  padding: 10px 30px;
+  color: white;
+  transition: .6s ease-in-out;
+  font-family: 'roboto_condensedbold';
+  margin: 10px 20px;
+  text-transform: uppercase;
+  transition: .5s ease-in-out;
+}
+
+@media (max-width: 556px) {
+  /* line 926, sass/perfil.sass */
+  section.services .avaluo1 .info .boton {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+/* line 941, sass/perfil.sass */
+section.services .avaluo1 .info .boton:hover {
+  text-decoration: none;
+  background: #474747;
+}
+
+/* line 945, sass/perfil.sass */
+section.services .avaluo2 .title-section {
+  height: 30%;
+}
+
+@media (max-width: 768px) {
+  /* line 945, sass/perfil.sass */
+  section.services .avaluo2 .title-section {
+    margin-top: 50px;
+    height: auto;
+  }
+}
+
+/* line 950, sass/perfil.sass */
+section.services .avaluo2 .title-section h2 {
+  font-family: 'roboto_condensedlight';
+  text-transform: uppercase;
+  color: red;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 950, sass/perfil.sass */
+  section.services .avaluo2 .title-section h2 {
+    margin-top: 80px;
+    height: auto;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 950, sass/perfil.sass */
+  section.services .avaluo2 .title-section h2 {
+    height: auto;
+  }
+}
+
+/* line 962, sass/perfil.sass */
+section.services .avaluo2 .title-section h2:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  background: url(../../img/arrow-red.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+@media (max-width: 768px) {
+  /* line 962, sass/perfil.sass */
+  section.services .avaluo2 .title-section h2:after {
+    left: 20%;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 962, sass/perfil.sass */
+  section.services .avaluo2 .title-section h2:after {
+    left: 5%;
+    width: 30px;
+    height: 60px;
+  }
+}
+
+/* line 980, sass/perfil.sass */
+section.services .avaluo2 .title-section h2:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  background: url(../../img/arrow-red.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+@media (max-width: 768px) {
+  /* line 980, sass/perfil.sass */
+  section.services .avaluo2 .title-section h2:before {
+    right: 20%;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 980, sass/perfil.sass */
+  section.services .avaluo2 .title-section h2:before {
+    right: 5%;
+    width: 30px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 950, sass/perfil.sass */
+  section.services .avaluo2 .title-section h2 {
+    margin-top: 40px;
+  }
+}
+
+/* line 1000, sass/perfil.sass */
+section.services .avaluo2 .title-section h2 .avaluo {
+  font-size: 1.6em;
+  color: #5A5A5A;
+}
+
+/* line 1003, sass/perfil.sass */
+section.services .avaluo2 .title-section h2 .tipo {
+  position: relative;
+  font-family: 'roboto_condensedbold';
+  font-size: .87em;
+  color: red;
+}
+
+/* line 1008, sass/perfil.sass */
+section.services .avaluo2 .title-section h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'roboto_condensedlight_italic';
+  margin-bottom: 40px;
+}
+
+/* line 1013, sass/perfil.sass */
+section.services .avaluo2 .title-section h3 span {
+  color: red;
+  font-family: 'roboto_condensedlight_italic';
+}
+
+/* line 1016, sass/perfil.sass */
+section.services .avaluo2 .info {
+  background: url(../../img/back-avaluo.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70%;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 1016, sass/perfil.sass */
+  section.services .avaluo2 .info {
+    height: auto;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 1016, sass/perfil.sass */
+  section.services .avaluo2 .info {
+    padding: 0px;
+  }
+}
+
+/* line 1028, sass/perfil.sass */
+section.services .avaluo2 .info p {
+  color: #363636;
+}
+
+/* line 1031, sass/perfil.sass */
+section.services .avaluo2 .info ul {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1366px) {
+  /* line 1031, sass/perfil.sass */
+  section.services .avaluo2 .info ul {
+    display: none;
+  }
+}
+
+/* line 1035, sass/perfil.sass */
+section.services .avaluo2 .info ul li {
+  font-family: 'roboto_condensedlight';
+  color: #787878;
+}
+
+@media (max-width: 1366px) {
+  /* line 1035, sass/perfil.sass */
+  section.services .avaluo2 .info ul li {
+    font-size: .8em;
+  }
+}
+
+/* line 1040, sass/perfil.sass */
+section.services .avaluo2 .info .boton {
+  background: red;
+  padding: 10px 30px;
+  color: white;
+  transition: .6s ease-in-out;
+  font-family: 'roboto_condensedbold';
+  margin: 10px 20px;
+  text-transform: uppercase;
+  transition: .5s ease-in-out;
+}
+
+@media (max-width: 556px) {
+  /* line 1040, sass/perfil.sass */
+  section.services .avaluo2 .info .boton {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+/* line 1055, sass/perfil.sass */
+section.services .avaluo2 .info .boton:hover {
+  text-decoration: none;
+  background: #474747;
+}
+
+/* line 1058, sass/perfil.sass */
+section.packages {
+  background: url(../../img/background.jpg);
+}
+
+@media (max-width: 768px) {
+  /* line 1058, sass/perfil.sass */
+  section.packages {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 1058, sass/perfil.sass */
+  section.packages {
+    height: 180vh;
+  }
+}
+
+/* line 1064, sass/perfil.sass */
+section.packages .titulo {
+  padding: 100px;
+}
+
+@media (max-width: 768px) {
+  /* line 1064, sass/perfil.sass */
+  section.packages .titulo {
+    padding: 30px;
+  }
+}
+
+/* line 1068, sass/perfil.sass */
+section.packages .package-column {
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+}
+
+@media (max-width: 556px) {
+  /* line 1068, sass/perfil.sass */
+  section.packages .package-column {
+    width: 100%;
+  }
+}
+
+/* line 1074, sass/perfil.sass */
+section.packages h2 {
+  font-family: 'roboto_condensedbold_italic';
+  color: #0066ad;
+  text-transform: uppercase;
+  font-size: 2.7em;
+  position: relative;
+}
+
+@media (max-width: 1366px) {
+  /* line 1074, sass/perfil.sass */
+  section.packages h2 {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 1074, sass/perfil.sass */
+  section.packages h2 {
+    text-align: center;
+  }
+}
+
+/* line 1084, sass/perfil.sass */
+section.packages h2 span {
+  position: relative;
+  color: #717171;
+  font-size: .7em;
+  display: block;
+}
+
+/* line 1089, sass/perfil.sass */
+section.packages h2:after {
+  content: '';
+  width: 200px;
+  height: 4px;
+  background: red;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  /* line 1089, sass/perfil.sass */
+  section.packages h2:after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+/* line 1100, sass/perfil.sass */
+section.packages h2:before {
+  content: '';
+  width: 150px;
+  height: 4px;
+  background: red;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  /* line 1100, sass/perfil.sass */
+  section.packages h2:before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+/* line 1111, sass/perfil.sass */
+section.packages .card-header {
+  border-bottom: 4px solid #757575;
+}
+
+@media (max-width: 1366px) {
+  /* line 1111, sass/perfil.sass */
+  section.packages .card-header {
+    padding: 3px;
+  }
+}
+
+/* line 1115, sass/perfil.sass */
+section.packages .card-header .card-title {
+  font-family: 'roboto_condensedbold';
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #626262;
+}
+
+@media (max-width: 1366px) {
+  /* line 1115, sass/perfil.sass */
+  section.packages .card-header .card-title {
+    font-size: 1.3em;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+}
+
+/* line 1124, sass/perfil.sass */
+section.packages .card-header .card-subtitle {
+  color: #747474;
+}
+
+@media (max-width: 1366px) {
+  /* line 1124, sass/perfil.sass */
+  section.packages .card-header .card-subtitle {
+    font-size: 1em;
+  }
+}
+
+/* line 1128, sass/perfil.sass */
+section.packages .card-body {
+  padding-bottom: 0;
+}
+
+/* line 1130, sass/perfil.sass */
+section.packages .card-body .boton {
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #3675C3;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  transition: .3s ease-in-out;
+  text-transform: uppercase;
+}
+
+/* line 1140, sass/perfil.sass */
+section.packages .card-body .boton:hover {
+  background: #434343;
+  padding: 10px 50px;
+}
+
+/* line 1144, sass/perfil.sass */
+section.packages .card-body ul {
+  padding: 0;
+}
+
+/* line 1146, sass/perfil.sass */
+section.packages .card-body ul li {
+  list-style: none;
+  border-bottom: 2px solid #5599c8;
+  line-height: 60px;
+}
+
+@media (max-width: 1366px) {
+  /* line 1146, sass/perfil.sass */
+  section.packages .card-body ul li {
+    line-height: 30px;
+  }
+}
+
+/* line 1152, sass/perfil.sass */
+section.packages .card-body .card-text {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+@media (max-width: 1366px) {
+  /* line 1152, sass/perfil.sass */
+  section.packages .card-body .card-text {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 1152, sass/perfil.sass */
+  section.packages .card-body .card-text {
+    font-size: .8em;
+  }
+}
+
+/* line 1159, sass/perfil.sass */
+section.packages .card-body .card-text .column {
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+}
+
+/* line 1164, sass/perfil.sass */
+section.packages .card-body .card-text .price {
+  font-family: 'roboto_condensedbold';
+  color: #616161;
+}
+
+@media (max-width: 556px) {
+  /* line 1168, sass/perfil.sass */
+  section.contacto {
+    height: 200vh;
+  }
+}
+
+/* line 1171, sass/perfil.sass */
+section.contacto .form-container {
+  padding: 40px;
+}
+
+/* line 1173, sass/perfil.sass */
+section.contacto .form-container h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'roboto_condensedbold';
+  color: #727272;
+}
+
+@media (max-width: 1366px) {
+  /* line 1173, sass/perfil.sass */
+  section.contacto .form-container h2 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 1173, sass/perfil.sass */
+  section.contacto .form-container h2 {
+    font-size: 1.6em;
+  }
+}
+
+/* line 1182, sass/perfil.sass */
+section.contacto .form-container h2 span {
+  color: #4A7DDB;
+  font-size: 1.3em;
+}
+
+/* line 1185, sass/perfil.sass */
+section.contacto .form-container form {
+  width: 100%;
+}
+
+/* line 1187, sass/perfil.sass */
+section.contacto .form-container form .campo {
+  width: 100%;
+  border-radius: 15px;
+  text-align: center;
+  transition: .4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  /* line 1187, sass/perfil.sass */
+  section.contacto .form-container form .campo {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 1187, sass/perfil.sass */
+  section.contacto .form-container form .campo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* line 1200, sass/perfil.sass */
+section.contacto .form-container form .campo:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid red;
+}
+
+/* line 1204, sass/perfil.sass */
+section.contacto .form-container form .btn {
+  border: none;
+}
+
+/* line 1206, sass/perfil.sass */
+section.contacto .form-container form .btn:hover {
+  background: #4A7DDB;
+}
+
+/* line 1208, sass/perfil.sass */
+section.contacto p {
+  font-size: 1em;
+}
+
+@media (max-width: 1366px) {
+  /* line 1208, sass/perfil.sass */
+  section.contacto p {
+    font-size: .8em;
+  }
+}
+
+/* line 1212, sass/perfil.sass */
+section.contacto i {
+  font-size: 2em;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  color: #595959;
+}
+
+/* line 1218, sass/perfil.sass */
+section.contacto .photo {
+  height: 100vh;
+  background-image: url(../../img/contacto2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 1224, sass/perfil.sass */
+section.contacto .photo h2 {
+  text-transform: uppercase;
+  font-family: 'roboto_condensedbold';
+  padding: 10px 20px;
+  border: 3px solid red;
+  display: inline-block;
+}
+
+/* line 1230, sass/perfil.sass */
+section.contacto .photo h2 a {
+  color: white;
+  transition: .2s;
+}
+
+/* line 1233, sass/perfil.sass */
+section.contacto .photo h2 a:hover {
+  text-decoration: none;
+  padding: 10px 40px;
+}
+
+/* line 1237, sass/perfil.sass */
+section.footer {
+  height: 100%;
+  position: relative;
+}
+
+/* line 1240, sass/perfil.sass */
+section.footer h2.aliados {
+  font-family: 'roboto_condensedbold_italic';
+  text-transform: uppercase;
+  color: #0066ad;
+  font-size: 1.5em;
+}
+
+@media (max-width: 556px) {
+  /* line 1240, sass/perfil.sass */
+  section.footer h2.aliados {
+    padding-top: 50px;
+  }
+}
+
+/* line 1247, sass/perfil.sass */
+section.footer h2.aliados span {
+  color: #707070;
+}
+
+/* line 1249, sass/perfil.sass */
+section.footer .logos {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 556px) {
+  /* line 1249, sass/perfil.sass */
+  section.footer .logos {
+    margin: 30px auto;
+  }
+}
+
+/* line 1256, sass/perfil.sass */
+section.footer .footer-content {
+  background: #353535;
+  padding: 50px;
+  position: relative;
+  height: 30%;
+  width: 100%;
+}
+
+/* line 1262, sass/perfil.sass */
+section.footer .footer-content:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  top: 0px;
+  left: 50%;
+  z-index: 10;
+  background: url(../../img/bar-footer.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* line 1276, sass/perfil.sass */
+section.footer strong {
+  color: white;
+}
+
+/* line 1278, sass/perfil.sass */
+section.footer p {
+  color: #B2B2B2;
+}
+
+/* line 1280, sass/perfil.sass */
+section.footer ul {
+  padding: 0;
+  padding-left: 10px;
+}
+
+/* line 1283, sass/perfil.sass */
+section.footer ul li {
+  list-style: none;
+}
+
+/* line 1285, sass/perfil.sass */
+section.footer ul li a {
+  color: #B2B2B2;
+}
+
+/* line 1287, sass/perfil.sass */
+section.footer ul li a:hover {
+  text-decoration: none;
+}

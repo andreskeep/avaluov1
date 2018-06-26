@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Avalúo fácil - checkout
+	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	//Icons
+	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" )
+	// Bootstrap
+	link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+	// Estilos
+	link(rel="stylesheet", href="assets/css/avaluo-styles.css")
+body
+	
+	.container-icon
+		#icon-toggle.icon-toggle
+			span.bar1
+			span.bar2
+			span.bar3
+			span.bar4
+			span.bar5
+
+	#menu-responsive-back.menu-responsive-back
+		a(href="index.html", class="logo-wrapper")
+			img(src="img/avaluo-facil-logo-white.png", alt="", class="logo")
+		nav
+			ul.menu-container
+				li.item-menu
+					a(href="index.html" class="link", onclick="$('[#home]').animatescroll();") Inicio
+				li.item-menu
+					a(href="perfil.html", class="link", ) Perfil
+				li.item-menu
+					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
+		nav.social-media
+			ul
+				li
+					a(href="#")
+						i(class="fab fa-facebook-square")
+				li
+					a(href="#")
+						i(class="fab fa-youtube")
+				li
+					a(href="#")
+						i(class="fab fa-instagram")
+	#home.home
+		span.top
+		span.bottom
+		span.left
+		span.right
+		.menu
+			a(href="index.html", class="logo-wrapper")
+				img(src="img/avaluo-facil-logo.png", alt="", class="logo")
+			nav
+				ul.menu-container
+					li.item-menu
+						a(href="index.html", class="link") Inicio
+					li.item-menu
+						a(href="perfil.html", class="link") Perfil
+					li.item-menu
+						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
+			nav.social-media
+				ul
+					li
+						a(href="#")
+							i(class="fab fa-facebook-square")
+					li
+						a(href="#")
+							i(class="fab fa-youtube")
+					li
+						a(href="#")
+							i(class="fab fa-instagram")
+		.logo-responsive#logo-responsive
+			img(src="img/avaluo-facil-logo.png", alt="")
+		.wrapper
+			section#checkout.checkout.section
+				form(action="send" method="post" class="full-height" style="display: block")
+					.row.full-height.align-items-center
+						.col-lg-6
+							.row.justify-center
+								.col-lg-12
+									h2.informacion
+										| Checkout
+										br
+										span Información adicional
+									p.text-center Datos del inmueble
+									.row(style="margin:10px 0")
+										.col-lg-4
+											input(type="text" placeholder="Habitaciones" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Acabado piso alcobas" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Baños totales" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Acabado piso baños" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Garajes" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Tipo de apartamento" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Área terraza balcón" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Fecha última remodelación" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Antiguedad" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Administración" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Pisos totales de la edificación" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Piso de la propiedad" class="form-control campo")
+									p.text-center Completa estos datos para finalizar la compra
+									.row(style="margin:10px 0px 0px 0px")
+										.col-lg-4
+											input(type="text" placeholder="Nombre" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Apellidos" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Compañia" class="form-control campo")
+									.row(style="margin:10px 0px 0px 0px")
+										.col-lg-4
+											input(type="text" placeholder="Ciudad" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Dirección" class="form-control campo")
+										.col-lg-4
+											input(type="text" placeholder="Barrio" class="form-control campo")
+									.row(style="margin:10px 0px 0px 0px")
+										.col-lg-4
+											input(type="text" placeholder="Teléfono" class="form-control campo")
+										.col-lg-4
+											input(type="e-mail" placeholder="E-mail" class="form-control campo")
+									.row(style="margin:10px 0px 0px 0px")
+										.col-lg-12
+											textarea(class="form-control" placeholder="Información adicional")
+									.row(style="margin-bottom: 20px")
+										.col-lg-12.text-center
+											label.for-check-label 
+												input(type="checkbox")
+												|  ¿Quieres crear una cuenta?
+						.col-lg-6.full-height.comprar
+							.row.order.align-items-center.justify-content-center
+								.table-responsive.col-lg-8
+									table(class="table table-hover table-dark table-checkout")
+										h2 Tu orden
+										thead(class="thead-dark")
+											tr
+												th(scope="col") PRODUCTO
+												th(scope="col") TIPO DE AVALÚO
+												th(scope="col") TOTAL
+											tbody
+												tr
+													th(scope="row")  Avalúo 1
+													td Certificado
+													td $300.000
+														
+												tr
+													th(scope="row")  Avalúo 1
+													td Informativo
+													td $300.000
+														
+												tr(class="table-dark")
+													th(scope="row") SUBTOTAL
+													td(colspan="2" class="text-center" style="background-color: white; color: gray") $600.000
+												tr
+									input(type="submit" value="FINALIZAR LA COMPRA" class="btn btn-dark")
+
+
+			section#contacto.contacto.section(style="display: none")
+				.row.full-height.align-items-center
+					.col-lg-6.form-container
+						h2 
+							| Seguimos en 
+							br
+							span contácto
+						p.text-center Si tiene alguna inquietud puede contactarnos por cualquier medio que ofrecemos
+						form(action="send.php" method="post")
+							.row
+								.col-lg-6
+									.form-group
+										input(type="text" placeholder="Nombre Completo" class="form-control campo")
+								.col-lg-6
+									.form-group
+										input(type="email" placeholder="E-mail" class="form-control campo")
+							.row
+								.col-lg-6
+									.form-group
+										input(type="text" placeholder="Teléfono" class="form-control campo")
+								.col-lg-6
+									.form-group
+										input(type="text" placeholder="Asunto" class="form-control campo")
+							.row
+								.col-lg-12
+									.form-group
+										textarea.form-control.campo(placeholder="Déjanos un mensaje")
+							.row
+								.col-lg-12.text-center
+									input(type="submit" class="btn btn-dark" value="Enviar" style="padding: 10px 40px")
+							.row(style="padding: 20px 0")
+								.col-lg-6
+									i(class="fas fa-home")
+									p 
+										strong DIRECCIÓN
+										br
+										| Cra 73a #53 - 33, Oficina 202. Bogota, Colombia
+								.col-lg-6
+									i(class="far fa-envelope-open")
+									p 
+										strong E-mail
+										br
+										| info@avaluofacil.com
+								.col-lg-6
+									i(class="fas fa-phone")
+									p 
+										strong Teléfono
+										br
+										| +57 (1) 4804180
+					.col-lg-6.photo
+						.row.full-height.align-items-center.justify-content-center
+							h2.text-center 
+								a(href="#") Regístrate acá
+			section#footer.footer.section
+				.row.full-height.align-items-center.justify-content-center
+					.col-lg-6
+						iframe(src="https://snazzymaps.com/embed/77933" width="100%" height="600px" style="border:none;")
+					.col-lg-6
+						h2.text-center.aliados
+							| Nuestros 
+							span aliados
+						img(src="img/logos.jpg", alt="", class="logos")
+				.footer-content
+					.row
+						.col-lg-3
+							img(src="img/avaluo-facil-logo-white.png")
+							p La primer plataforma a nivel mundial que hace avaluos 100% online
+						.col-lg-3
+							strong NUESTRA COBERTURA
+							P Bogota, Medellin, Cartagena, Barranquilla, Cali, Bucaramanga, Santa Marta Peritos registrados en
+						.col-lg-3
+							strong NUESTROS SERVICIOS
+							ul
+								li
+									a(href="#") Avalúo informativo
+								li
+									a(href="#") Avalúo certificado
+								li
+									a(href="#") Paquetes de avalúos
+							strong LEGAL
+							ul
+								li
+									a(href="#") Propiedad intelectual
+								li
+									a(href="#") Privacidad y seguridad
+								li
+									a(href="#") Condiciones generales
+						.col-lg-3
+							strong CONTÁCTENOS
+							p Bogota, Cra 73a #53 - 33, Oficina 202. +57 (1) 4804180
+							p info@avaluofacil.com
+						.col-lg-12
+							p.text-center © Avaluo Facil 2016. All rights reserved.
+
+
+	//SCRIPTS
+	script(src="assets/js/jquery.min.js")
+	script(src="assets/js/bootstrap.min.js")
+	// Animate
+	script(src="assets/js/animatescroll.min.js")
+	// script(src="assets/js/app.js")
+	

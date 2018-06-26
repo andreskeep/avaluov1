@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Avalúo fácil
+	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	//Icons
+	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" )
+	// Bootstrap
+	link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+	// Estilos
+	link(rel="stylesheet", href="assets/css/avaluo-styles.css")
+body
+	
+	.container-icon
+		#icon-toggle.icon-toggle
+			span.bar1
+			span.bar2
+			span.bar3
+			span.bar4
+			span.bar5
+
+
+	#menu-responsive-back.menu-responsive-back
+		a(href="index.html", class="logo-wrapper")
+			img(src="img/avaluo-facil-logo-white.png", alt="", class="logo")
+		nav
+			ul.menu-container
+				li.item-menu
+					a(href="#" class="link active", onclick="$('[#home]').animatescroll();") Inicio
+				li.item-menu
+					a(href="#", class="link-ext perfil-link", id="perfil") Regístrate
+				li.item-menu
+					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
+		nav.social-media
+			ul
+				li
+					a(href="#")
+						i(class="fab fa-facebook-square")
+				li
+					a(href="#")
+						i(class="fab fa-youtube")
+				li
+					a(href="#")
+						i(class="fab fa-instagram")
+
+	#home.home
+		span.top
+		span.bottom
+		span.left
+		span.right
+
+		.menu
+			a(href="index.html", class="logo-wrapper")
+				img(src="img/avaluo-facil-logo.png", alt="", class="logo")
+			nav
+				ul.menu-container
+					li.item-menu
+						a(href="index.html", class="link-ext") Volver al inicio
+					li.item-menu
+						a(href="perfil.html", class="link-ext perfil-link", id="perfil") Ingresar
+					li.item-menu
+						a(href="#", class="link active", id="register-form", onclick="$('#form-registro').animatescroll();") Registrarse
+					li.item-menu
+						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
+			nav.social-media
+				ul
+					li
+						a(href="#")
+							i(class="fab fa-facebook-square")
+					li
+						a(href="#")
+							i(class="fab fa-youtube")
+					li
+						a(href="#")
+							i(class="fab fa-instagram")
+		.logo-responsive#logo-responsive
+			img(src="img/avaluo-facil-logo.png", alt="")
+		.wrapper
+			section#registro.registro
+				.container.full-height
+					.row.full-height.justify-content-center.align-items-center
+						form(action="" class="col-lg-3")
+							h2 Ingresa a tu perfil
+							.form-group
+								input(type="text" class="form-control campo" placeholder="Usuario")
+							.form-group
+								input(type="password" class="form-control campo" placeholder="Password")
+							.form-group.text-center
+								input(type="submit" class="ingresar" value="INGRESAR")
+							.form-group
+								a(href="")
+							a(href="#" class="text-center" style="color: white; display: block") Olvidaste la contraseña
+							input(type="submit" class="registro-user" value="REGISTRARME")
+							a(href="#" class="facebook-login") INGRESAR CON FACEBOOK
+					a(href="#" class="cerrar") 
+						i(class="far fa-times-circle")
+			section#form-registro.form-registro.section
+				.row.full-height.align-items-center.justify-content-center
+					.col-lg-4
+						h2.text-center Registrate
+						p.datos.text-center Si tiene alguna inquietud puede contactarnos por cualquier medio que ofrecemos
+						form(action="send.php" method="post")
+							.row
+								.col-lg-6
+									select(name="estrato" class="form-control select" placeholder="Tipo de persona")
+										option(value="" disabled selected) Tipo de persona
+										option(value="Persona Natural") Persona Natural
+										option(value="Persona Jurídica") Persona Jurídica
+										option(value="Persona Gubernamental") Persona Gubernamental
+								.col-lg-6
+									input(type="text" placeholder="Nombre Completo" class="form-control campo")
+								.col-lg-6
+									select(name="estrato" class="form-control select" placeholder="Tipo de documento")
+										option(value="" disabled selected) Tipo de documento
+										option(value="Cedula de ciudadania") Cédula de ciudadania
+										option(value="Cédula de extranjeria") Cédula de extranjería
+										option(value="Tarjeta de identidad") tarjeta de identidad
+								.col-lg-6
+									input(type="text" placeholder="Documento" class="form-control campo")
+								.col-lg-6
+									input(type="text" placeholder="Celular" class="form-control campo")
+								.col-lg-6
+									input(type="email" placeholder="Email" class="form-control campo")
+								.col-lg-6
+									input(type="password" placeholder="Contraseña" class="form-control campo")
+								.col-lg-6
+									input(type="password" placeholder="Repita la contraseña" class="form-control campo")
+								.col-lg-12
+									a(href="#" class="registro-user") REGISTRARME
+									a(href="#" class="facebook-login") INGRESAR CON FACEBOOK
+			section#contacto.contacto.section
+				.row.full-height.align-items-center
+					.col-lg-6.form-container
+						h2 
+							| Seguimos en 
+							br
+							span contácto
+						p.text-center Si tiene alguna inquietud puede contactarnos por cualquier medio que ofrecemos
+						form(action="send.php" method="post")
+							.row
+								.col-lg-6
+									.form-group
+										input(type="text" placeholder="Nombre" class="form-control campo")
+								.col-lg-6
+									.form-group
+										input(type="email" placeholder="E-mail" class="form-control campo")
+							.row
+								.col-lg-6
+									.form-group
+										input(type="text" placeholder="Teléfono" class="form-control campo")
+								.col-lg-6
+									.form-group
+										input(type="text" placeholder="Asunto" class="form-control campo")
+							.row
+								.col-lg-12
+									.form-group
+										textarea.form-control.campo(placeholder="Déjanos un mensaje")
+							.row
+								.col-lg-12.text-center
+									input(type="submit" class="btn btn-dark" value="Enviar" style="padding: 10px 40px")
+							.row(style="padding: 20px 0")
+								.col-lg-6
+									i(class="fas fa-home")
+									p 
+										strong DIRECCIÓN
+										br
+										| Cra 73a #53 - 33, Oficina 202. Bogota, Colombia
+								.col-lg-6
+									i(class="far fa-envelope-open")
+									p 
+										strong E-mail
+										br
+										| info@avaluofacil.com
+								.col-lg-6
+									i(class="fas fa-phone")
+									p 
+										strong Teléfono
+										br
+										| +57 (1) 4804180
+					.col-lg-6.photo
+						.row.full-height.align-items-center.justify-content-center
+			section#footer.footer.section
+				.row.full-height.align-items-center.justify-content-center
+					.col-lg-6
+						iframe(src="https://snazzymaps.com/embed/77933" width="100%" height="600px" style="border:none;")
+					.col-lg-6
+						h2.text-center.aliados
+							| Nuestros 
+							span aliados
+						img(src="img/logos.jpg", alt="", class="logos")
+				.footer-content
+					.row
+						.col-lg-3
+							img(src="img/avaluo-facil-logo-white.png")
+							p La primer plataforma a nivel mundial que hace avaluos 100% online
+						.col-lg-3
+							strong NUESTRA COBERTURA
+							P Bogota, Medellin, Cartagena, Barranquilla, Cali, Bucaramanga, Santa Marta Peritos registrados en
+						.col-lg-3
+							strong NUESTROS SERVICIOS
+							ul
+								li
+									a(href="#") Avalúo informativo
+								li
+									a(href="#") Avalúo certificado
+								li
+									a(href="#") Paquetes de avalúos
+							strong LEGAL
+							ul
+								li
+									a(href="#") Propiedad intelectual
+								li
+									a(href="#") Privacidad y seguridad
+								li
+									a(href="#") Condiciones generales
+						.col-lg-3
+							strong CONTÁCTENOS
+							p Bogota, Cra 73a #53 - 33, Oficina 202. +57 (1) 4804180
+							p info@avaluofacil.com
+						.col-lg-12
+							p.text-center © Avaluo Facil 2016. All rights reserved.
+
+
+	//SCRIPTS
+	script(src="assets/js/jquery.min.js")
+	script(src="assets/js/bootstrap.min.js")
+	// Animate
+	script(src="assets/js/animatescroll.min.js")
+	script(src="assets/js/app.js")
+	

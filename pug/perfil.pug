@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Avalúo fácil - Perfil
+	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	//Icons
+	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" )
+	// Bootstrap
+	link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+	// Estilos
+	link(rel="stylesheet", href="assets/css/perfil.css")
+body
+	
+	.container-icon
+		#icon-toggle.icon-toggle
+			span.bar1
+			span.bar2
+			span.bar3
+			span.bar4
+			span.bar5
+
+	#menu-responsive-back.menu-responsive-back
+		a(href="index.html", class="logo-wrapper")
+			img(src="img/avaluo-facil-logo-white.png", alt="", class="logo")
+		nav
+			ul.menu-container
+				li.item-menu
+					a(href="index.html" class="link", onclick="$('[#home]').animatescroll();") Volver al Inicio
+				li.item-menu
+					a(href="", class="link", onclick="$('#perfil').animatescroll();") Info
+				li.item-menu
+					a(href="", class="link", onclick="$('#historial').animatescroll();") Historial
+				li.item-menu
+					a(href="", class="link", onclick="$('#services').animatescroll();") Calcular avalúo
+				li.item-menu
+					a(href="", class="link", onclick="$('#services').animatescroll();") Comprar Avalúos
+				li.item-menu
+					a(href="", class="link", onclick="$('#packages').animatescroll();") Paquetes
+				li.item-menu
+					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
+		nav.social-media
+			ul
+				li
+					a(href="#")
+						i(class="fab fa-facebook-square")
+				li
+					a(href="#")
+						i(class="fab fa-youtube")
+				li
+					a(href="#")
+						i(class="fab fa-instagram")
+	#home.home
+		span.top
+		span.bottom
+		span.left
+		span.right
+		.menu
+			a(href="index.html", class="logo-wrapper")
+				img(src="img/avaluo-facil-logo-white.png", alt="", class="logo")
+			nav
+				ul.menu-container
+					p(style="color: white; text-transform: uppercase; background: #2D2D2D; padding: 7px") 
+						| Bienvenido 
+						strong Andres
+					li.item-menu
+						a(href="index.html", class="link-ext") Volver al Inicio
+					li.item-menu
+						a(href="", class="link active", onclick="$('#slider').animatescroll();") Calculo rápido
+					li.item-menu
+						a(href="", class="link", onclick="$('#perfil').animatescroll();") Info
+					li.item-menu
+						a(href="", class="link", onclick="$('#historial').animatescroll();") Historial
+					li.item-menu
+						a(href="", class="link", onclick="$('#services').animatescroll();") Comprar avalúos
+					li.item-menu
+						a(href="", class="link", onclick="$('#packages').animatescroll();") Paquetes
+					li.item-menu
+						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
+					li.item-menu
+						a(href="", class="link", ) Cerrar sesión
+			nav.social-media
+				ul
+					li
+						a(href="#")
+							i(class="fab fa-facebook-square")
+					li
+						a(href="#")
+							i(class="fab fa-youtube")
+					li
+						a(href="#")
+							i(class="fab fa-instagram")
+		.logo-responsive#logo-responsive
+			img(src="img/avaluo-facil-logo.png", alt="")
+		.wrapper
+			section#slider.slider.section
+				#carouselExampleControls.carousel.slide(data-ride="carousel")
+					.carousel-inner
+						.carousel-item.active.search
+							.row.justify-content-center.align-items-center.full-height
+								.col-lg-8.text-center
+									h3 LA PRIMER PLATAFORMA A
+									h2 NIVEL MUNDIAL
+										span QUE HACE TU AVALUO 100% ONLINE
+									h1 
+										span.one COTIZACIÓN 
+										span.two RÁPIDA
+									form(action="send.php", method="post", class="form-inline text-center form")
+										select(name="estrato" class="form-control select" placeholder="Estrato")
+											option(value="" disabled selected) Selecciona un estrato
+											option(value="1") Estrato 1
+											option(value="2") Estrato 2
+											option(value="3") Estrato 3
+											option(value="4") Estrato 4
+											option(value="5") Estrato 5
+											option(value="6") Estrato 6
+										select(name="finalidad" class="form-control select")
+											option(value="" disabled selected) Selecciona una finalidad
+											option(value="Avalúo informativo") Avalúo informativo
+											option(value="Avalúo informativo") Avalúo certificado
+										input(type="text" class="form-control campo" placeholder="Estrato" style="display: none")
+										input(type="text" class="form-control campo" placeholder="Finalidad" style="display: none")
+										input(type="text" class="form-control campo" placeholder="Área M2")
+										input(type="submit" class="form-control enviar", value="CALCULAR")
+
+									.result
+										span.valor $100'000.000
+										span.title-valor Resutado de la cotización
+
+									a(href="registro.html" class="registrate") ¡Ingresa ya! obtén beneficios!
+
+					a.carousel-control-prev.arrow(href="#carouselExampleControls" role="button" data-slide="prev")
+						span
+							i(class="fa fa-arrow-left" aria-hidden="true")
+						span.sr-only Previous
+					a.carousel-control-next.arrow(href="#carouselExampleControls" role="button" data-slide="next")
+						span
+							i(class="fa fa-arrow-right" aria-hidden="true")
+						span.sr-only Next
+			section#perfil.perfil.section
+				.row.full-height.align-items-center.justify-content-center
+					.col-lg-6
+						h2 Perfil
+						p Esta es tu plataforma de avalúos, acá podrás hacer avalúos informativos, certificados, revisar tu historial y adquirir nuestros paquetes de avalúos a mejores costos.
+						p
+							strong Nombre:
+							|    Andres
+						p
+							strong Email:
+							|    andres@keepagencia.com
+						p
+							strong Documento:
+							|    1072543456
+						p
+							strong Teléfono Celular:
+							|    3194353140
+						.row(style="margin-bottom: 10px")
+							.col-lg-6
+								a(href="editar-datos.html" class="boton-editar") Editar
+							.col-lg-6
+								a(href="cambiar-contrasena.html" class="boton-editar") Cambiar contraseña
+						form(action="")
+							.form-group
+								.row.codigo-promocional
+									.col-lg-12
+										p Tienes códigos promocionales? Ingrésalos a continuación:
+									.col-lg-8
+										input(type="text" placeholder="Ingresa un código promocional" class="form-control campo")
+									.col-lg-4
+										input(type="submit" value="Verificar" class="btn-dark btn")
+			section#historial.historial.section
+				.row.full-height.align-items-center.justify-content-center
+					.col-lg-8
+						h2 Historial
+						p Acá puede revisar y descargar los avalúos realizados.
+						table(class="table")
+							thead(class="")
+								tr
+									th(scope="col" class="titulos") Id avalúo
+									th(scope="col" class="titulos") Fecha
+									th(scope="col" class="titulos") Dirección
+									th(scope="col" class="titulos") Estado
+									th(scope="col" class="titulos") Acciones
+								tbody
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td En proceso
+										td Descargar
+														
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td Completo
+										td Descargar
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td En proceso
+										td Descargar
+														
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td Completo
+										td Descargar
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td En proceso
+										td Descargar
+														
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td Completo
+										td Descargar
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td En proceso
+										td Descargar
+														
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td Completo
+										td Descargar
+														
+			section#services.services.section
+				.row.full-height
+					.col-lg-6.col-avaluo.avaluo1
+						.title-section
+							h2
+								span.avaluo Avalúo
+								br
+								span.tipo Informativo
+							h3
+								| Desde
+								span $44.000
+						.info
+							p Valoración estadística del precio de una vivienda, oficina o local a excelentes precios. Avalúo Fácil emplea fuentes de información real y confiable por lo que el precio del inmueble y sus anexos se ajustan de manera significativa a valores representativos de mercado.
+							ul
+								li Es el precio calculado estadísticamente de un inmueble en particular.
+								li El modelo utiliza base de datos de información real y confiable.
+								li Un Avalúo Informativo no es un avalúo oficial, pero es representativo para conocer el precio de merado de un inmueble.
+								li Puede beneficiarse de excelentes descuentos, adquiriendo paquetes de avalúos informativos. (el BOTON paquetes me envía a la sección paquetes de avalúos en la aplicación)
+								li Recibirá y podrá actualizar el Avalúo Informativo. Con este servicio conocerá el precio de mercado estimado, la calidad del avalúo, intervalo de precios para negociación, precio aproximado para arriendo y ubicación geográfica.
+							a(href="#" class="boton") Descargar ejemplo
+							a(href="checkout-informativo.html" class="boton") comprar
+					.col-lg-6.col-avaluo.avaluo2
+						.title-section
+							h2
+								span.avaluo Avalúo
+								br
+								span.tipo Certificado
+							h3
+								| Desde
+								span $44.000
+						.info
+							p Tenemos un equipo de profesionales listo para atender su solicitud de avalúo. Estamos en todas las ciudades de Colombia. Contáctese ahora mismo con nosotros para recibir mayor información.
+							ul
+								li El avalúo Certificado es firmado por peritos certificados en el Registro Nacional de Avaluadores.
+								li Este Avalúo es válido para cualquier trámite legal, financiero o sencillamente para actualización de activos con base a las Normas Internacionales de Información Financieras (NIIF).
+								li Puede solicitarlo a través del chat o llamando a nuestros números telefónicos o directamente desde nuestra plataforma. (CLIC aquí para ingresar)
+								li Tiempo de entrega record: 24 horas.
+							a(href="#" class="boton") Descargar ejemplo
+							a(href="checkout-certificado.html" class="boton") comprar			
+			section#packages.packages.section
+				.row.full-height.align-items-center
+					.col-lg-4.titulo
+						h2
+							|Paquetes
+							br
+							span de avalúos
+					.col-lg-8.cards
+						.row
+							.package-column
+								.card.bg-light.mb-3
+									.card-header.text-center 
+										h3.card-title Paquete 1
+										h4.card-subtitle 10 AVALÚOS
+									.card-body
+										ul
+											li.card-text
+												.row
+													.column.text-left Precio por avalúo
+													.column.text-right.price $35.000
+											li.card-text
+												.row
+													.column.text-left Total
+													.column.text-right.price $350.000
+										.row
+											.col-lg-12.text-center
+												a(href="#" class="btn btn-dark boton") Comprar
+							.package-column
+								.card.bg-light.mb-3
+									.card-header.text-center 
+										h3.card-title Paquete 2
+										h4.card-subtitle 20 AVALÚOS
+									.card-body
+										ul
+											li.card-text
+												.row
+													.column.text-left Precio por avalúo
+													.column.text-right.price $25.000
+											li.card-text
+												.row
+													.column.text-left Total
+													.column.text-right.price $500.000
+										.row
+											.col-lg-12.text-center
+												a(href="#" class="btn btn-dark boton") Comprar
+						.row
+							.package-column
+								.card.bg-light.mb-3
+									.card-header.text-center 
+										h3.card-title Paquete 3
+										h4.card-subtitle 30 AVALÚOS
+									.card-body
+										ul
+											li.card-text
+												.row
+													.column.text-left Precio por avalúo
+													.column.text-right.price $22.500
+											li.card-text
+												.row
+													.column.text-left Total
+													.column.text-right.price $675.000
+										.row
+											.col-lg-12.text-center
+												a(href="#" class="btn btn-dark boton") Comprar
+							.package-column
+								.card.bg-light.mb-3
+									.card-header.text-center 
+										h3.card-title Paquete 4
+										h4.card-subtitle 50 AVALÚOS
+									.card-body
+										ul
+											li.card-text
+												.row
+													.column.text-left Precio por avalúo
+													.column.text-right.price $20.000
+											li.card-text
+												.row
+													.column.text-left Total
+													.column.text-right.price $1'000.000
+										.row
+											.col-lg-12.text-center
+												a(href="#" class="btn btn-dark boton") Comprar
+			section#contacto.contacto.section
+				.row.full-height.align-items-center
+					.col-lg-6.form-container
+						h2 
+							| Seguimos en 
+							br
+							span contácto
+						p.text-center Si tiene alguna inquietud puede contactarnos por cualquier medio que ofrecemos
+						form(action="send.php" method="post")
+							.row
+								.col-lg-6
+									.form-group
+										input(type="text" placeholder="Nombre" class="form-control campo")
+								.col-lg-6
+									.form-group
+										input(type="email" placeholder="E-mail" class="form-control campo")
+							.row
+								.col-lg-6
+									.form-group
+										input(type="text" placeholder="Teléfono" class="form-control campo")
+								.col-lg-6
+									.form-group
+										input(type="text" placeholder="Asunto" class="form-control campo")
+							.row
+								.col-lg-12
+									.form-group
+										textarea.form-control.campo(placeholder="Déjanos un mensaje")
+							.row
+								.col-lg-12.text-center
+									input(type="submit" class="btn btn-dark" value="Enviar" style="padding: 10px 40px")
+							.row(style="padding: 20px 0")
+								.col-lg-6
+									i(class="fas fa-home")
+									p 
+										strong DIRECCIÓN
+										br
+										| Cra 73a #53 - 33, Oficina 202. Bogota, Colombia
+								.col-lg-6
+									i(class="far fa-envelope-open")
+									p 
+										strong E-mail
+										br
+										| info@avaluofacil.com
+								.col-lg-6
+									i(class="fas fa-phone")
+									p 
+										strong Teléfono
+										br
+										| +57 (1) 4804180
+					.col-lg-6.photo
+						.row.full-height.align-items-center.justify-content-center
+			section#footer.footer.section
+				.row.full-height.align-items-center.justify-content-center
+					.col-lg-6
+						iframe(src="https://snazzymaps.com/embed/77933" width="100%" height="600px" style="border:none;")
+					.col-lg-6
+						h2.text-center.aliados
+							| Nuestros 
+							span aliados
+						img(src="img/logos.jpg", alt="", class="logos")
+				.footer-content
+					.row
+						.col-lg-3
+							img(src="img/avaluo-facil-logo-white.png")
+							p La primer plataforma a nivel mundial que hace avaluos 100% online
+						.col-lg-3
+							strong NUESTRA COBERTURA
+							P Bogota, Medellin, Cartagena, Barranquilla, Cali, Bucaramanga, Santa Marta Peritos registrados en
+						.col-lg-3
+							strong NUESTROS SERVICIOS
+							ul
+								li
+									a(href="#") Avalúo informativo
+								li
+									a(href="#") Avalúo certificado
+								li
+									a(href="#") Paquetes de avalúos
+							strong LEGAL
+							ul
+								li
+									a(href="#") Propiedad intelectual
+								li
+									a(href="#") Privacidad y seguridad
+								li
+									a(href="#") Condiciones generales
+						.col-lg-3
+							strong CONTÁCTENOS
+							p Bogota, Cra 73a #53 - 33, Oficina 202. +57 (1) 4804180
+							p info@avaluofacil.com
+						.col-lg-12
+							p.text-center © Avaluo Facil 2016. All rights reserved.
+
+
+	//SCRIPTS
+	script(src="assets/js/jquery.min.js")
+	script(src="assets/js/bootstrap.min.js")
+	// Animate
+	script(src="assets/js/animatescroll.min.js")
+	script(src="assets/js/app.js")
+	

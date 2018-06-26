@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Avalúo fácil - checkout Certificado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <!--Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+  <!-- Estilos-->
+  <link rel="stylesheet" href="assets/css/avaluo-styles.css"/>
+</head>
+<body>
+  <div class="container-icon">
+    <div class="icon-toggle" id="icon-toggle"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span><span class="bar4"></span><span class="bar5"></span></div>
+  </div>
+  <div class="menu-responsive-back" id="menu-responsive-back"><a class="logo-wrapper" href="index.html"><img class="logo" src="img/avaluo-facil-logo-white.png" alt=""/></a>
+    <nav>
+      <ul class="menu-container">
+        <li class="item-menu"><a class="link-ext" href="index.html">Volver al Inicio</a></li>
+        <li class="item-menu"><a class="link-ext" href="perfil.html">Perfil</a></li>
+        <li class="item-menu"><a class="link" href="#" onclick="$('[#contact]').animatescroll();">Contácto</a></li>
+      </ul>
+    </nav>
+    <nav class="social-media">
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="home" id="home"><span class="top"></span><span class="bottom"></span><span class="left"></span><span class="right"></span>
+    <div class="menu"><a class="logo-wrapper" href="index.html"><img class="logo" src="img/avaluo-facil-logo.png" alt=""/></a>
+      <nav>
+        <ul class="menu-container">
+          <li class="item-menu"><a class="link-ext" href="index.html">Volver al Inicio</a></li>
+          <li class="item-menu"><a class="link-ext" href="perfil.html">Perfil</a></li>
+          <li class="item-menu"><a class="link-ext perfil-link" href="#" id="perfil">Ingresar</a></li>
+          <li class="item-menu"><a class="link-ext" href="registro.html" id="register-form">Registrarse</a></li>
+          <li class="item-menu"><a class="link" href="" onclick="$('#contacto').animatescroll();">Contácto</a></li>
+        </ul>
+      </nav>
+      <nav class="social-media">
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="logo-responsive" id="logo-responsive"><img src="img/avaluo-facil-logo.png" alt=""/></div>
+    <div class="wrapper">
+      <section class="registro" id="registro">
+        <div class="container full-height">
+          <div class="row full-height justify-content-center align-items-center">
+            <form class="col-lg-3" action="">
+              <h2>Ingresa a tu perfil</h2>
+              <div class="form-group">
+                <input class="form-control campo" type="text" placeholder="Usuario"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control campo" type="password" placeholder="Password"/>
+              </div>
+              <div class="form-group text-center">
+                <input class="ingresar" type="submit" value="INGRESAR"/>
+              </div>
+              <div class="form-group"><a href=""></a></div><a class="text-center" href="#" style="color: white; display: block">Olvidaste la contraseña</a><a class="registro-user" href="#">REGISTRARME</a><a class="facebook-login" href="#">INGRESAR CON FACEBOOK</a>
+            </form>
+          </div><a class="cerrar" href="#"> <i class="far fa-times-circle"></i></a>
+        </div>
+      </section>
+      <section class="checkout section" id="checkout">
+        <div class="row full-height justify-content-center">
+          <div class="col-lg-6">
+            <form class="cupon text-center" action="">
+              <label for="">¿Tienes un cupón de descuento?</label>
+              <input class="form-control campo" type="text" style="margin-bottom: 0"/>
+              <input class="action-button" type="submit" value="verificar"/>
+            </form>
+            <form class="msform" id="msform" action="send.php" method="post">
+              <h2> <span>Finalizar compra</span></h2><a class="perfil-link" href="#">¿Ya tienes una cuenta? Ingresa acá</a>
+              <ul id="progressbar">
+                <li class="active">Ubicación</li>
+                <li>Datos personales</li>
+              </ul>
+              <fieldset>
+                <h2 class="fs-title">Ubicación</h2>
+                <h3 class="fs-subtitle">Paso 1</h3>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <iframe src="https://snazzymaps.com/embed/77933" width="100%" height="200px" style="border:none;"></iframe><br/><br/>
+                    <input class="form-control campo" type="text" placeholder="Dirección"/>
+                  </div>
+                  <div class="col-lg-6">
+                    <select class="form-control select" name="estrato" placeholder="Estrato">
+                      <option value="" disabled="disabled" selected="selected">Tipo de inmueble</option>
+                      <option value="apartamento">Apartamento</option>
+                      <option value="apartamento">Casa</option>
+                    </select>
+                    <select class="form-control select" name="estrato" placeholder="Ciudad">
+                      <option value="" disabled="disabled" selected="selected">Ciudad</option>
+                      <option value="Bogotá">Bogotá</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6">
+                    <select class="form-control select" name="estrato" placeholder="Ciudad">
+                      <option value="" disabled="disabled" selected="selected">Localidad</option>
+                      <option value="Kennedy">Kennedy</option>
+                    </select>
+                    <select class="form-control select" name="estrato" placeholder="Estrato">
+                      <option class="opcion1" value="" disabled="disabled" selected="selected">Estrato</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+                </div>
+                <input class="next action-button" type="button" name="next" value="Siguiente"/>
+              </fieldset>
+              <fieldset>
+                <h2 class="fs-title">Datos personales</h2>
+                <h3 class="fs-subtitle">PASO 2</h3>
+                <div class="row" style="margin:10px 0px 0px 0px">
+                  <div class="col-lg-4">
+                    <input class="form-control campo" type="text" placeholder="Nombre"/>
+                  </div>
+                  <div class="col-lg-4">
+                    <input class="form-control campo" type="text" placeholder="Apellidos"/>
+                  </div>
+                  <div class="col-lg-4">
+                    <input class="form-control campo" type="text" placeholder="Compañia"/>
+                  </div>
+                </div>
+                <div class="row" style="margin:10px 0px 0px 0px">
+                  <div class="col-lg-4">
+                    <input class="form-control campo" type="text" placeholder="Ciudad"/>
+                  </div>
+                  <div class="col-lg-4">
+                    <input class="form-control campo" type="text" placeholder="Dirección"/>
+                  </div>
+                  <div class="col-lg-4">
+                    <input class="form-control campo" type="text" placeholder="Barrio"/>
+                  </div>
+                </div>
+                <div class="row" style="margin:10px 0px 0px 0px">
+                  <div class="col-lg-4">
+                    <input class="form-control campo" type="text" placeholder="Teléfono"/>
+                  </div>
+                  <div class="col-lg-4">
+                    <input class="form-control campo" type="e-mail" placeholder="E-mail"/>
+                  </div>
+                </div>
+                <div class="row" style="margin:10px 0px 0px 0px">
+                  <div class="col-lg-12">
+                    <textarea class="form-control" placeholder="Información adicional"></textarea>
+                  </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px">
+                  <div class="col-lg-12 text-center">
+                    <label class="for-check-label" style="color: white"> 
+                      <input type="checkbox"/> ¿Quieres crear una cuenta?
+                    </label>
+                  </div>
+                </div>
+                <input class="previous action-button" type="button" name="previous" value="Anterior"/>
+                <input class="submit action-button" type="submit" name="submit" value="COMPRAR"/>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- Scripts-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Animate-->
+  <script src="assets/js/animatescroll.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
