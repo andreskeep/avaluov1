@@ -26,9 +26,9 @@ body
 		nav
 			ul.menu-container
 				li.item-menu
-					a(href="index.html" class="link", onclick="$('[#home]').animatescroll();") Volver al Inicio
+					a(href="index.html" class="link-ext") Volver al Inicio
 				li.item-menu
-					a(href="", class="link", onclick="$('#perfil').animatescroll();") Info
+					a(href="#perfil", class="link", onclick="$('#perfil').animatescroll();") Info
 				li.item-menu
 					a(href="", class="link", onclick="$('#historial').animatescroll();") Historial
 				li.item-menu
@@ -66,19 +66,19 @@ body
 					li.item-menu
 						a(href="index.html", class="link-ext") Volver al Inicio
 					li.item-menu
-						a(href="", class="link active", onclick="$('#slider').animatescroll();") Calculo rápido
+						a(href="", class="link active") Calculo rápido
 					li.item-menu
-						a(href="", class="link", onclick="$('#perfil').animatescroll();") Info
+						a(href="#perfil", class="link") Info
 					li.item-menu
-						a(href="", class="link", onclick="$('#historial').animatescroll();") Historial
+						a(href="#historial", class="link") Historial
 					li.item-menu
-						a(href="", class="link", onclick="$('#services').animatescroll();") Comprar avalúos
+						a(href="#services", class="link") Comprar avalúos
 					li.item-menu
-						a(href="", class="link", onclick="$('#packages').animatescroll();") Paquetes
+						a(href="#packages", class="link") Paquetes
 					li.item-menu
-						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
+						a(href="#contacto", class="link") Contácto
 					li.item-menu
-						a(href="", class="link", ) Cerrar sesión
+						a(href="", class="link-ext", ) Cerrar sesión
 			nav.social-media
 				ul
 					li
@@ -233,8 +233,7 @@ body
 										td 20/10/2018
 										td Calle34 #23-65 Bogotá Cundinamarca
 										td Completo
-										td Descargar
-														
+										td Descargar													
 			section#services.services.section
 				.row.full-height
 					.col-lg-6.col-avaluo.avaluo1
