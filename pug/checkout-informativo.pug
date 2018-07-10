@@ -127,7 +127,7 @@ body
 											option(value="" disabled selected) Ciudad
 											option(value="Bogotá") Bogotá
 									.col-lg-6
-										select(name="estrato" class="form-control select" placeholder="Ciudad")
+										select(name="estrato" class="form-control select" placeholder="Estrato")
 											option(value="" disabled selected) Localidad
 											option(value="Kennedy") Kennedy
 										select(name="estrato" class="form-control select" placeholder="Estrato")
@@ -146,27 +146,39 @@ body
 									.col-lg-4
 										input(type="text" placeholder="Habitaciones" class="form-control campo")
 									.col-lg-4
-										input(type="text" placeholder="Acabado piso alcobas" class="form-control campo")
+										select(name="acabado-piso-habitacion" class="form-control select" placeholder="Ciudad")
+											option(value="" disabled selected) Acabado del piso de la habitación
+											option(value="Opcion 1") Opcion 1
+											option(value="Opcion 2") Opcion 2
 									.col-lg-4
 										input(type="text" placeholder="Baños totales" class="form-control campo")
+								.row
 									.col-lg-4
-										input(type="text" placeholder="Acabado piso baños" class="form-control campo")
+										select(name="acabado-piso-habitacion" class="form-control select" placeholder="Ciudad")
+											option(value="" disabled selected) Acabado del piso del baño
+											option(value="Opcion 1") Opcion 1
+											option(value="Opcion 2") Opcion 2
 									.col-lg-4
 										input(type="text" placeholder="Garajes" class="form-control campo")
 									.col-lg-4
-										input(type="text" placeholder="Tipo de apartamento" class="form-control campo")
+										select(name="acabado-piso-habitacion" class="form-control select" placeholder="Ciudad")
+											option(value="" disabled selected) Tipo de apartamento
+											option(value="Opcion 1") Opcion 1
+											option(value="Opcion 2") Opcion 2
+								.row
 									.col-lg-4
 										input(type="text" placeholder="Área terraza balcón" class="form-control campo")
 									.col-lg-4
-										input(type="text" placeholder="Fecha última remodelación" class="form-control campo")
+										input(type="text" placeholder="Fecha última remodelación general" class="form-control campo")
 									.col-lg-4
 										input(type="text" placeholder="Antiguedad" class="form-control campo")
+								.row
 									.col-lg-4
 										input(type="text" placeholder="Administración" class="form-control campo")
 									.col-lg-4
 										input(type="text" placeholder="Pisos totales de la edificación" class="form-control campo")
 									.col-lg-4
-										input(type="text" placeholder="Piso de la propiedad" class="form-control campo")
+										input(type="text" placeholder="Piso en el que se ubica la propiedad" class="form-control campo")
 								input(type="button" name="previous" class="previous action-button" value="Anterior" )
 								input(type="button" name="next" class="next action-button" value="Siguiente")
 							fieldset
@@ -178,17 +190,15 @@ body
 									.col-lg-4
 										input(type="text" placeholder="Apellidos" class="form-control campo")
 									.col-lg-4
-										input(type="text" placeholder="Cédula" class="form-control campo")
+										input(type="text" placeholder="Cédula o Nit" class="form-control campo")
 								.row(style="margin:10px 0px 0px 0px")
 									.col-lg-4
 										input(type="text" placeholder="Ciudad" class="form-control campo")
 									.col-lg-4
 										input(type="text" placeholder="Dirección" class="form-control campo")
 									.col-lg-4
-										input(type="text" placeholder="Barrio" class="form-control campo")
-								.row(style="margin:10px 0px 0px 0px")
-									.col-lg-4
 										input(type="text" placeholder="Teléfono" class="form-control campo")
+								.row(style="margin:10px 0px 0px 0px")
 									.col-lg-4
 										input(type="e-mail" placeholder="E-mail" class="form-control campo")
 								.row(style="margin:10px 0px 0px 0px")
