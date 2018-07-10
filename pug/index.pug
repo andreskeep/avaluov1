@@ -27,21 +27,21 @@ body
 		nav
 			ul.menu-container
 				li.item-menu
-					a(href="#" class="link active", onclick="$('[#home]').animatescroll();") Inicio
+					a(href="#home" class="link active") Inicio
 				li.item-menu
-					a(href="#" class="link", onclick="$('[#about]').animatescroll();") ¿Quiénes somos?
+					a(href="#about" class="link") ¿Quiénes somos?
 				li.item-menu
-					a(href="#" class="link", onclick="$('[#services]').animatescroll();" ) Servicios
+					a(href="#services" class="link") Servicios
 				li.item-menu
-					a(href="#" class="link", onclick="$('[#packages]').animatescroll();" ) Paquetes
+					a(href="#packages" class="link") Paquetes
 				li.item-menu
 						a(href="#", class="link-ext perfil-link", id="perfil") Ingresar
 				li.item-menu
-					a(href="perfil.html", class="link-ext",) Perfil
+					a(href="perfil.html", class="link-ext") Perfil
 				li.item-menu
 					a(href="registro.html", class="link-ext") Regístrate
 				li.item-menu
-					a(href="#", class="link", onclick="$('[#contacto]').animatescroll();" ) Contácto
+					a(href="#contacto", class="link") Contácto
 		nav.social-media
 			ul
 				li
@@ -66,13 +66,13 @@ body
 			nav
 				ul.menu-container
 					li.item-menu
-						a(href="", class="link active", onclick="$('#home').animatescroll();") Inicio
+						a(href="#home", class="link active") Inicio
 					li.item-menu
-						a(href="", class="link", onclick="$('#about').animatescroll();" ) ¿Quiénes somos?
+						a(href="#about", class="link") ¿Quiénes somos?
 					li.item-menu
-						a(href="", class="link", onclick="$('#services').animatescroll();") Avalúos
+						a(href="#services", class="link") Avalúos
 					li.item-menu
-						a(href="", class="link", onclick="$('#packages').animatescroll();") Paquetes
+						a(href="#packages", class="link") Paquetes
 					li.item-menu
 						a(href="#", class="link-ext perfil-link", id="perfil") Ingresar
 					li.item-menu
@@ -80,7 +80,7 @@ body
 					li.item-menu
 						a(href="registro.html", class="link-ext", id="register-form") Registrarse
 					li.item-menu
-						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
+						a(href="#contacto", class="link") Contácto
 			nav.social-media
 				ul
 					li
@@ -117,38 +117,6 @@ body
 				#carouselExampleControls.carousel.slide(data-ride="carousel")
 					.carousel-inner
 						.carousel-item.active.search
-							.row.justify-content-center.align-items-center.full-height
-								.col-lg-8.text-center
-									h3 LA PRIMER PLATAFORMA A
-									h2 NIVEL MUNDIAL
-										span QUE HACE TU AVALUO 100% ONLINE
-									h1 
-										span.one COTIZACIÓN 
-										span.two RÁPIDA
-									form(action="send.php", method="post", class="form-inline text-center form")
-										select(name="estrato" class="form-control select" placeholder="Estrato" required)
-											option(value="" disabled selected) Selecciona un estrato
-											option(value="1") Estrato 1
-											option(value="2") Estrato 2
-											option(value="3") Estrato 3
-											option(value="4") Estrato 4
-											option(value="5") Estrato 5
-											option(value="6") Estrato 6
-										select(name="finalidad" class="form-control select" id="avaluo")
-											option(value="" disabled selected) Selecciona una finalidad
-											option(value="avaluo-informativo") Avalúo informativo
-											option(value="avaluo-certificado") Avalúo certificado
-										input(type="text" class="form-control campo" placeholder="Estrato" style="display: none" required)
-										input(type="text" class="form-control campo" placeholder="Finalidad" style="display: none" required)
-										input(type="text" class="form-control campo" placeholder="Área M2")
-										input(type="submit" class="form-control enviar", value="CALCULAR" id="calcular")
-
-									.result
-										span.valor $100'000.000
-										span.title-valor Resutado de la cotización
-
-									a(href="registro.html" class="registrate") ¡Ingresa ya! obtén beneficios!
-						.carousel-item.search
 							.row.justify-content-center.align-items-center.full-height
 								.col-lg-8.text-center
 									h3 LA PRIMER PLATAFORMA A

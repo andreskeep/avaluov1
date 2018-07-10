@@ -1,9 +1,13 @@
 'use strict';
 
 const linkItem = $('.link')
-
 const iconMenu = $('#icon-toggle')
 const menuToggle = $('#menu-responsive-back')
+
+
+// Scroll positions page
+
+
 
 iconMenu.on('click', function(event) {
 	event.preventDefault();
@@ -15,6 +19,11 @@ linkItem.on('click', function(e) {
 	e.preventDefault()
 	$(this).toggleClass('active')
 	$(this).parent().siblings('.item-menu').children('.link').removeClass('active')
+	var linkTo =  $(this).attr("href");
+	console.log(linkTo)
+	$('html, body').animate({
+    	scrollTop: $(  linkTo ).offset().top - 50
+	}, 1000);
 });
 
 $('.perfil-link').on('click', function(e){
@@ -25,10 +34,4 @@ $('.perfil-link').on('click', function(e){
 $('.cerrar').on('click', function(e){
 	e.preventDefault()
 	$('#registro').slideToggle()
-});
-
-
-$(window).on('scroll', (e)=>{
-	console.log($(this).scrollTop())
-	console.log(aboutTop)
 });
